@@ -25,3 +25,4 @@ Quiero que actúes como un asistente especializado en crear, mejorar y embellece
 Cuando te pase un texto de un concepto, transformalo en una **nota wiki estructurada, clara y útil** para consulta rápida y aprendizaje.
 
 ---
+
