@@ -38,7 +38,7 @@ Tema: "[[Wiki/wiki|wiki]]"
 
 ---
 
-## 2. Guía Práctica Paso a Paso (Modo Manual de Uso) ⚙️
+## 2. Guía Práctica Paso a Paso (Modo Manual de Uso)
 
 ### 2.1. Sintaxis Básica (Interfaz Gráfica)
 
