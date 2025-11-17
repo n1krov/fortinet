@@ -46,6 +46,10 @@ Desde la adquisición de VMware por parte de la empresa Broadcom, la descarga de
 
 [https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
+- En debian
+```sh
+sudo apt install putty
+```
   
 
 # LABORATORIO PARA IMPORTAR
