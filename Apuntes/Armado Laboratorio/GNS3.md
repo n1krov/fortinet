@@ -39,5 +39,15 @@ luego el servidor que estara corriendo en la maquina virtual de vmware o virtual
 
 la forma en que voy a llevar a cabo este laboratorio es en una maquina a parte pero estara en la misma red, por lo tanto no varia el cambio. a menos que el equipo este en otra subred. pero este no es el caso.
 
+en el caso del gns3 cliente que isntalamos en la parte preferencias - Server
+- en host reemplazarlo por la ip de la maquina donde esta el servidor gns3 en la vm
+- el puerto es el 80
+- el usuario y password es el que te proporciona el sv `gns3`/`gns3`
+
+
 una vez configurada la maquina virtual e instalada arrojara una ip (porque la vamos a hacer por adaptador puente de la maquina real)
+
+
+asegurarse en la configuracion de la maquina virtual asignarle unos 6GB de ram
+que tenga una mac asignada y este en adaptador puente
 
