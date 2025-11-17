@@ -100,10 +100,7 @@ Una vez aplicada la configuración, el estado del servidor debe indicar que la c
 > Si el estado dice algo diferente (ej: Disconnected o Local Server), la configuración es incorrecta. Vuelve a verificar la IP, el Puerto (debe ser 80) y que no haya un firewall bloqueando el tráfico entre el host y la VM.
 > 
 > **Comando de Verificación (Host/Cliente):**
-> 
-> Bash
-> 
-> ```
+> ```bash
 > # Reemplaza con la IP de la VM Server
 > ping 192.168.1.150
 > telnet 192.168.1.150 80
