@@ -1,5 +1,5 @@
 ---
-Tema: "[[Laboratorio (Configuracion)]]"
+Tema: "[[armando laboratorio]]"
 ---
 
 # 🚀 Configuración del Laboratorio GNS3 para Fortinet
