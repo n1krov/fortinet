@@ -24,7 +24,6 @@ Utilizaremos la directiva `default-src 'self'` que restringe todos los tipos de 
 
 - **Header Value:** `default-src 'self'; frame-ancestors 'self';`
 
-
 | **Directiva**            | **Significado**                                                                                                                                                                                                            |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `default-src 'self'`     | Regla general: solo permite cargar recursos (scripts, imágenes, fuentes, etc.) desde tu **propio dominio**.                                                                                                                |
