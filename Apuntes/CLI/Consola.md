@@ -10,3 +10,4 @@ get system interface
 			show
 				- muestra las configs de ese puerto
 			append allowaccess http
+		end <-- Para grabar las configuraciones
