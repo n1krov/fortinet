@@ -25,6 +25,8 @@ La configuración de GNS3 se basa en dos componentes principales que trabajan en
 
 Este diagrama representa la conexión básica entre tu máquina host (GNS3 Client) y la VM Server, ambos en la misma red local.
 
+![[Pasted image 20251216081953.png]]
+
 Fragmento de código
 
 ```mermaid
