@@ -52,3 +52,19 @@ elegis la opcion de estatico, elegis una ip valida y luego guardar. facilitoo
 ## CLI
 
 Mismo procedimiento
+
+una vez qeu elegis el puerto a  la derecha esta el edit in CLI
+
+
+Alternativamente si estas sin contexto
+>[!info]
+>`config system interface`
+>`edit port1`
+>`show`
+
+para cambiarlo-> `set mode static`
+
+pero para colocar la ip que queres -> `set ip <ip>/<CIDR>`
+
+obviamente para guardar los cambios le das a `end`
+
