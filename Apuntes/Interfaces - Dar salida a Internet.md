@@ -64,13 +64,42 @@ show
 
 set ip 60.89.123.1/30
 
-set alias ISP-1
+set alias "ISP 1"
 
-set role WAN
+set role wan
 
 end
 
 ---
 
 puerto 3
+
+config system interface
+edit port3
+
+set ip 45.32.12.1/30
+set alias "ISP 2"
+set role wan
+
+next
+> Nota que `next` a diferencia de `end` lo que hace es volver al contexto anterior, y `end` te devuelve al inicio de la CLI. Por lo que resulta util utilizar next para seguir configurando las interfaces.
+
+
+---
+
+y por ultimo el puerto4 del `site B` que es la interfaz que forti va a tomar para que la windows del `site B` se pueda conectar
+
+edit port4
+show
+
+set ip 10.0.2.254/24
+
+set allowaccess ping
+show
+
+end
+
+
+---
+
 
