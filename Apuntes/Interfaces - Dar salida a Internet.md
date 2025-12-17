@@ -59,3 +59,18 @@ config system interface
 show
 
 edit port2
+
+show
+
+set ip 60.89.123.1/30
+
+set alias ISP-1
+
+set role WAN
+
+end
+
+---
+
+puerto 3
+
