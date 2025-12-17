@@ -49,3 +49,13 @@ el gateway debe ir para `port2 (ISP 1)` y otro para `port3 (ISP 2)`  que es colo
 
 
 
+---
+
+Desde la CLI
+
+
+config system interface
+
+show
+
+edit port2
