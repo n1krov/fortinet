@@ -27,10 +27,14 @@ esos puertos simulan estar conectados en este lab a un mikrotik el cual maneja d
 	- El **Forti** tomara la `.1`
 	- El **Mikrotik** tomara la `.2`
 
-hoy una interfaz 4 (`port4`) que ese va conectado con el windows. controller
+hoy una interfaz 4 (`port4`) que ese va conectado con el windows (`DomainController`)
+en esa interfaz la ip para el forti es
+- `10.0.1.254/24` 
+	- Rol de LAN
+	- Al acceder desde la maquina windows se puede tirar un ping y tendria que habilitar el acceso. sino tildar la opcion de ping en el Fortigat
 
-[[Interfaces del Mikrotik]]
 
+> Para profundizar puedes ver las [[Interfaces del Mikrotik]]
 ## Dar salida a internet desde el Fortigate
 
 ir a Network>Static Routes
