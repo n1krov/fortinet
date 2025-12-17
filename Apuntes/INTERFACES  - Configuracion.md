@@ -46,6 +46,7 @@ el destino para todo `0.0.0.0/0.0.0.0`
 
 el gateway debe ir para `port2 (ISP 1)` y otro para `port3 (ISP 2)`  que es colocar sus ips respectivamente
 
+> AL `ISP 2` sel 
 
 
 
@@ -112,4 +113,7 @@ edit <- con edit vale para **editar** y para **crear**
 
 dentro de (***router static***) ~por lo  que sé~ sepuede hacer `get` o `show`
 
-show muestra las config o cambios que se hicieron manualnete a las opciones por d
+`show` muestra las config o **cambios que se hicieron manualnete** a las opciones **por defecto**
+
+y `get` muestra todo
+
