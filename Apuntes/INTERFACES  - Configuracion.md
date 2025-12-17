@@ -35,7 +35,7 @@ en esa interfaz la ip para el forti es
 
 
 > Para profundizar puedes ver las [[Interfaces del Mikrotik]]
-## Dar salida a internet desde el Fortigate
+## **RUTAS** - Desde ***FORTIGATE*** hacia ***MIKROTIK***
 
 ir a Network>Static Routes
 
@@ -102,4 +102,10 @@ end
 
 ---
 
+### Rutas Estaticas CLI
+
+config router static
+show
+
+edit <- con edit vale para **editar** y para **crear**
 
