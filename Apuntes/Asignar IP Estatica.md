@@ -31,6 +31,7 @@ Usá todas las herramientas que provee **Obsidian Markdown** para lograr un manu
     4. Ejemplo práctico
     5. Errores comunes / Solución de problemas
     6. Conclusión o comprobación final
+
 ### 🎯 Objetivo final
 Transformar el texto o tema que te indique en un **manual técnico de ciberseguridad**:
 - Bien formateado.
