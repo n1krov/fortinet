@@ -109,3 +109,7 @@ show
 
 edit <- con edit vale para **editar** y para **crear**
 
+
+dentro de (***router static***) ~por lo  que sé~ sepuede hacer `get` o `show`
+
+show muestra las config o cambios que se hicieron manualnete a las opciones por d
