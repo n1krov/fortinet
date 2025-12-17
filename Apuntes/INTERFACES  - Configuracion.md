@@ -46,7 +46,7 @@ el destino para todo `0.0.0.0/0.0.0.0`
 
 el gateway debe ir para `port2 (ISP 1)` y otro para `port3 (ISP 2)`  que es colocar sus ips respectivamente
 
-> AL `ISP 2` sel 
+> AL `ISP 2` se le pone una distancia de 15 para que siempre la coneccion tome por `ISP 1` y el `ISP 2` quede para backup
 
 
 
@@ -108,12 +108,16 @@ end
 config router static
 show
 
-edit <- con edit vale para **editar** y para **crear**
+edit 1 <- con edit vale para **editar** y para **crear**
+
+>[!note]
+> dentro de (***router static***) ~por lo  que sé~ sepuede hacer `get` o `show`
+>`show` muestra las config o **cambios que se hicieron manualnete** a las opciones **por defecto**
+> - Puedes hacer tambien un `show full-configuration` para ver todo, similar al `get`
+>y `get` muestra todo
 
 
-dentro de (***router static***) ~por lo  que sé~ sepuede hacer `get` o `show`
+set gateway 
 
-`show` muestra las config o **cambios que se hicieron manualnete** a las opciones **por defecto**
-
-y `get` muestra todo
+> AL `ISP 2` se le pone una distancia de 15 para que siempre la coneccion tome por `ISP 1` y el `ISP 2` quede para backup
 
