@@ -45,6 +45,10 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 ## GUI
 
-
+ir a Network>Interfaces
+elegis el puerto en este caso uso el de administrador puerto 1 del forti. ese teiene una ip que esta por dhcp. 
+elegis la opcion de estatico, elegis una ip valida y luego guardar. facilitoo
 
 ## CLI
+
+Mismo procedimiento
