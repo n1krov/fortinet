@@ -27,10 +27,17 @@ esos puertos simulan estar conectados en este lab a un mikrotik el cual maneja d
 	- El **Forti** tomara la `.1`
 	- El **Mikrotik** tomara la `.2`
 
+[[Interfaces del Mikrotik]]
+
 ## Dar salida a internet desde el Fortigate
 
 ir a Network>Static Routes
 
+>[!note]
+> {explicar brevemente que es static routes de manera senccilla}
+
 el destino para todo 0.0.0.0/0.0.0.0
 
 el gateway debe ir para `port2 (ISP 1)` y otro para `port3 (ISP 2)`  que es colocar sus ips respectivamente
+
+
