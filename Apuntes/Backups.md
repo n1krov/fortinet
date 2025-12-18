@@ -61,3 +61,22 @@ si importas de un forti a otro hay cuestiones que debes considerar
 
 > Lo recomendable es crear un backup del **destino** para obtener la linea de ese backup y editar en el backup del **origen**
 
+
+## En CLI
+
+`excec backup`
+
+![[Pasted image 20251218120743.png]]
+
+aparecen varias opciones para poder backupear
+
+el mikrotik donde nosotros tenemos en el [[GNS3]] tiene un servicio FTP corriendo donde se alojan alli los backups
+
+`excecute backup config ftp <nombre> <ip_ftp_host> usuario_ftp password_ftp`
+
+> en este caso es `ftp/ftp`
+
+
+#### Para restaurar por CLI
+
+`excec restore config ftp <nombre>`
