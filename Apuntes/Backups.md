@@ -47,4 +47,5 @@ cuando se requiera armar backups
 
 sesion(admin)>Configuration>Backup
 
-te va a descargar un archivo.conf
+te va a descargar un `archivo.conf`
+
