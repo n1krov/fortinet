@@ -49,3 +49,15 @@ sesion(admin)>Configuration>Backup
 
 te va a descargar un `archivo.conf`
 
+
+#### Importar un backup a otro - Cuestiones
+
+sesion(admin)>Configuration>Restore
+
+
+si importas de un forti a otro hay cuestiones que debes considerar
+- la primera linea es la que valida los productos/equipos del origen.
+- eso si o si debe ser lo mismo
+
+> Lo recomendable es crear un backup del **destino** para obtener la linea de ese backup y editar en el backup del **origen**
+
