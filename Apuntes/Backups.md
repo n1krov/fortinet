@@ -79,4 +79,15 @@ el mikrotik donde nosotros tenemos en el [[GNS3]] tiene un servicio FTP corriend
 
 #### Para restaurar por CLI
 
-`excec restore config ftp <nombre>`
+``excecute restore config ftp <nombre> <ip_ftp_host> usuario_ftp password_ftp``
+
+
+> Si no sabes que puede seguir en un comando puedes probar que te liste escribiendo `?`
+
+
+
+Para probar el estado
+
+
+`get system performance status`
+
