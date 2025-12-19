@@ -52,3 +52,11 @@ desde el CLI podemos tirar
 `get system status`
 
 ![[Pasted image 20251219111442.png]]
+
+si la licencia expiro. lo uqe se debe hacer es hacer [[Backups]] en este caso por el cli, nos conectamso al servicion ftp que tiene el mikrotik
+
+`execute backup config ftp nombre_backup ip_destino ip_ftp ftp ftp`
+
+luego debemos ***resetar*** las configuraciones del **Fortigate** para eso le mandamos
+
+`execute factoryreset`
