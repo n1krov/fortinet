@@ -60,3 +60,10 @@ si la licencia expiro. lo uqe se debe hacer es hacer [[Backups]] en este caso po
 luego debemos ***resetar*** las configuraciones del **Fortigate** para eso le mandamos
 
 `execute factoryreset`
+
+pero adicionalmente podemos usar 
+```bash
+excec factoryreset2
+```
+
+este a diferencia del anterior, hace todo lo mismo pero **deja las configs de red**
