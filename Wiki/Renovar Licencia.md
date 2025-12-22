@@ -55,8 +55,9 @@ desde el CLI podemos tirar
 
 si la licencia expiro. lo uqe se debe hacer es hacer [[Backups]] en este caso por el cli, nos conectamso al servicion ftp que tiene el mikrotik
 
-`execute backup config ftp nombre_backup ip_destino ip_ftp ftp ftp`
-
+```sh
+execute backup config ftp "nombre_backup" ip_server_ftp usuario_ftp pass_ftp
+```
 luego debemos ***resetar*** las configuraciones del **Fortigate** para eso le mandamos
 
 `execute factoryreset`
@@ -66,4 +67,9 @@ pero adicionalmente podemos usar
 excec factoryreset2
 ```
 
-este a diferencia del anterior, hace todo lo mismo pero **deja las configs de red**
+este a diferencia del anterior, hace todo lo mismo pero **deja las configs de red**.
+Luego de formatear quedaria por restaurar el backup que habiamos hecho... eso lo haceemos con 
+
+```sh
+execute restore config ftp "nombre_backup" ip_server_ftp usuario_ftp pass_ftp
+```
