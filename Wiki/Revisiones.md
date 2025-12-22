@@ -11,3 +11,5 @@ en ese menu, hacer click en `save changes`
 
 luego puedes seleccionar una revision y tienes para ver los detalles con  `Details` 
 al hacer click derecho puedes guardar, hacer diff con otra revision etc
+
+![[Pasted image 20251222114731.png]]
