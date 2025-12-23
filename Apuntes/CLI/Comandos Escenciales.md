@@ -99,6 +99,10 @@ get system interface
 
 
 #### Opcion `show`
-
+show system interface
 
 #### Opcion `diagnose`
+
+
+#### Opcion `execute`
+
