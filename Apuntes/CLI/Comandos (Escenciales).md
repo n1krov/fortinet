@@ -121,7 +121,9 @@ ej -> `get system interface | grep -f "port1"`
 		- `end`
 
 
-
+`config system admin`
+	`edit (usuario)`
+	`set two-factor`
 
 #### Opcion `get`
 
