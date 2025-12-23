@@ -44,5 +44,51 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 ## Lista de Comandos Utiles
 
+raiz -> `FORTI-01 # _`
+
+`?` ->  para ver cosas sugerida s y entender en que contexto estoy
+
+desde la **raiz** se puede hacer 
+config -> pisiciona en contextos
+get
+show
+giagnose
+execute
+alias
+exit
 
 
+#### Opcion `config`
+| **Concepto**            | **Explicación en Español**                                   |
+| ----------------------- | ------------------------------------------------------------ |
+| **alertemail**          | Configuración de correos electrónicos de alerta.             |
+| **antivirus**           | Configuración del AntiVirus.                                 |
+| **application**         | Configuración del control de aplicaciones.                   |
+| **authentication**      | Autenticación.                                               |
+| **dlp**                 | Configuración de DLP (Prevención de pérdida de datos).       |
+| **dnsfilter**           | Configuración de filtro DNS.                                 |
+| **dpdk**                | Configuración del asistente FortiOS DPDK.                    |
+| **emailfilter**         | Configuración de AntiSpam.                                   |
+| **endpoint-control**    | Configuración del control de terminales (endpoints).         |
+| **extender-controller** | Configuración del controlador FortiExtender.                 |
+| **file-filter**         | Filtro de archivos.                                          |
+| **firewall**            | Configuración del Firewall.                                  |
+| **ftp-proxy**           | Configuración de proxy FTP.                                  |
+| **icap**                | Configuración del cliente ICAP.                              |
+| **ips**                 | Configuración de IPS (Sistema de prevención de intrusiones). |
+| **log**                 | Configuración de registros (logs).                           |
+| **report**              | Configuración de reportes.                                   |
+| **router**              | Configuración del Router.                                    |
+| **sctp-filter**         | Configuración de filtro SCTP.                                |
+| **ssh-filter**          | Configuración de filtro SSH.                                 |
+| **switch-controller**   | Configuración externa de FortiSwitch.                        |
+| **system**              | Configuración de operación del sistema.                      |
+| **user**                | Configuración de autenticación.                              |
+| **videofilter**         | Filtro de video.                                             |
+| **voip**                | Configuración de VoIP (Voz sobre IP).                        |
+| **vpn**                 | Configuración de VPN (Red Privada Virtual).                  |
+| **waf**                 | Configuración del Firewall de Aplicaciones Web (WAF).        |
+| **wanopt**              | Configuración de optimización de WAN.                        |
+| **web-proxy**           | Configuración de proxy web.                                  |
+| **webfilter**           | Configuración de filtro web.                                 |
+| **wireless-controller** | Configuración del punto de acceso inalámbrico.               |
