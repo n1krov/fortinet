@@ -141,4 +141,7 @@ show system interface
 
 
 #### Opcion `alias`
-`alias <comando>`
+
+
+`alias nombre_alias`
+> Debes tener en cuenta de como [[Crear alias]]
