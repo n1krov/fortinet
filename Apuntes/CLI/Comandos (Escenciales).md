@@ -52,6 +52,9 @@ raiz -> `FORTI-01 # _`
 `next`
 `end`
 
+puede usarse `grep`
+ej -> `get system interface | grep -f "port1"`
+
 | Comando                            | **Descripción Traducida**                       |
 | ---------------------------------- | ----------------------------------------------- |
 | `config` -> pisiciona en contextos | Configurar objeto                               |
