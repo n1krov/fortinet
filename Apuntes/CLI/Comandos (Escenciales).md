@@ -54,6 +54,8 @@ raiz -> `FORTI-01 # _`
 
 puede usarse `grep`
 ej -> `get system interface | grep -f "port1"`
+`-f` -> te baja con el contexto
+`-i` -> deshabilita keysesitive
 
 | Comando                            | **Descripción Traducida**                       |
 | ---------------------------------- | ----------------------------------------------- |
