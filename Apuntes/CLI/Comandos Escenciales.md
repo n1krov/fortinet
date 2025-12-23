@@ -47,6 +47,7 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 raiz -> `FORTI-01 # _`
 
 `?` ->  para ver cosas sugerida s y entender en que contexto estoy
+`abort`
 
 | Comando                            | **Descripción Traducida**                       |
 | ---------------------------------- | ----------------------------------------------- |
@@ -93,6 +94,18 @@ raiz -> `FORTI-01 # _`
 | **webfilter**           | Configuración de filtro web.                                 |
 | **wireless-controller** | Configuración del punto de acceso inalámbrico.               |
 
+`config system alias ?` 
+	- set
+	- unset
+	- get
+	- show
+	- next
+	- abort
+	- end
+
+
+
+
 #### Opcion `get`
 
 get system interface
@@ -106,3 +119,14 @@ show system interface
 
 #### Opcion `execute`
 
+`exec ping-options`
+
+`exec ping-options view-settings`
+
+`exec ping-options source 1.1.1.1`
+
+`exec ping-options reset`
+
+
+#### Opcion `alias`
+`alias <comando>`
