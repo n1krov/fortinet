@@ -48,15 +48,15 @@ raiz -> `FORTI-01 # _`
 
 `?` ->  para ver cosas sugerida s y entender en que contexto estoy
 
-desde la **raiz** se puede hacer 
-config -> pisiciona en contextos
-get
-show
-giagnose
-execute
-alias
-exit
-
+| Comando                            | **Descripción Traducida**                       |
+| ---------------------------------- | ----------------------------------------------- |
+| `config` -> pisiciona en contextos | Configurar objeto                               |
+| `get`                              | Obtener información dinámica y del sistema      |
+| `show`                             | Mostrar configuración                           |
+| `diagnose`                         | Herramienta de diagnóstico                      |
+| `execute`                          | Ejecutar comandos estáticos                     |
+| `alias`                            | Ejecutar comandos de alias                      |
+| `exit`                             | Salir de la interfaz de línea de comandos (CLI) |
 
 #### Opcion `config`
 | **Concepto**            | **Explicación en Español**                                   |
@@ -92,3 +92,13 @@ exit
 | **web-proxy**           | Configuración de proxy web.                                  |
 | **webfilter**           | Configuración de filtro web.                                 |
 | **wireless-controller** | Configuración del punto de acceso inalámbrico.               |
+
+#### Opcion `get`
+
+get system interface
+
+
+#### Opcion `show`
+
+
+#### Opcion `diagnose`
