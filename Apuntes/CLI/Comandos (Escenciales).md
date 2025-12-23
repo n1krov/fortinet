@@ -47,7 +47,10 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 raiz -> `FORTI-01 # _`
 
 `?` ->  para ver cosas sugerida s y entender en que contexto estoy
+
 `abort`
+`next`
+`end`
 
 | Comando                            | **Descripción Traducida**                       |
 | ---------------------------------- | ----------------------------------------------- |
@@ -95,13 +98,22 @@ raiz -> `FORTI-01 # _`
 | **wireless-controller** | Configuración del punto de acceso inalámbrico.               |
 
 `config system alias ?` 
-	- set
-	- unset
-	- get
-	- show
-	- next
-	- abort
-	- end
+`	edit`
+	`delete`
+	`purge`
+	`get`
+	`show`
+	`end`
+	
+	`edit <nombre>`
+	`show`
+		- `set`
+		- `unset`
+		- `get`
+		- `show`
+		- `next`
+		- `abort`
+		- `end`
 
 
 
