@@ -70,5 +70,21 @@ nota que schedule es una ventana de tiempo que tiene habilitada la politica
 
 ## Por [[CLI]]
 
-`config fire`
+`config firewall policy`
+`show`
+`show full-configuration`
+`edit 1`
+
+`set name INTERNET`
+`set srcintf port4`
+`set dstintf port2`
+`set srcaddr all`
+`set dstaddr all`
+`set schedule always`
+`set service "ALL"`
+
+`set action accept`
+`set nat enable`
+
+`end`
 
