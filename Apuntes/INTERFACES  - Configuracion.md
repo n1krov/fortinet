@@ -103,7 +103,7 @@ end
 
 ---
 
-### Rutas Estaticas CLI
+### Rutas Estaticas [[CLI]]
 
 config router static
 show
