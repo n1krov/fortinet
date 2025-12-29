@@ -1,5 +1,5 @@
 ---
-Tema: "[[apuntes]]"
+Tema: "[[policys&objects]]"
 ---
 
 Quiero que actúes como un **asistente especializado en crear y embellecer manuales técnicos de ciberseguridad** dentro de **Obsidian**.  
@@ -42,49 +42,6 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 ---
 
-## Crear politica
 
-si  observamos el contexto
-
-![[Pasted image 20251217115810.png]]
-
-
-en el site A no tiene salida a internet porque este justamente su puerta de enlace es hacia el fortigate. pero este no tiene ninguna politica implementada que le de acceso
-
-
-la idea es darle una politica que permita salir a internet
-
->[!Warning]
->Existe una politica implicita que esta definida por defecto que deniega **TODO**
-
-## GUI
-
-`Policy & Objects`>`firewall policy`>`+ Create New`
-
-aqui una imagen de muestra 
-
-![[Pasted image 20251229105110.png]]
-
-nota que schedule es una ventana de tiempo que tiene habilitada la politica
-
-
-## Por [[CLI]]
-
-`config firewall policy`
-`show`
-`show full-configuration`
-`edit 1`
-
-`set name INTERNET`
-`set srcintf port4`
-`set dstintf port2`
-`set srcaddr all`
-`set dstaddr all`
-`set schedule always`
-`set service "ALL"`
-
-`set action accept`
-`set nat enable`
-
-`end`
+estos objetos se utilizan para agregar en alguna configuracion de policys que querramos hacer
 
