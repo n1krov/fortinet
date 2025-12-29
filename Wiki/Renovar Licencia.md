@@ -73,3 +73,6 @@ Luego de formatear quedaria por restaurar el backup que habiamos hecho... eso lo
 ```sh
 execute restore config ftp "nombre_backup" ip_server_ftp usuario_ftp pass_ftp
 ```
+
+>  El acceso o ip del servicio ftp esta configurado en [[INTERFACES  - Configuracion]] alli se muestra la topologia de red
+
