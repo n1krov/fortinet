@@ -67,3 +67,8 @@ aqui una imagen de muestra
 
 nota que schedule es una ventana de tiempo que tiene habilitada la politica
 
+
+## Por [[CLI]]
+
+`config fire`
+
