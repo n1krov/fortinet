@@ -54,7 +54,16 @@ en el site A no tiene salida a internet porque este justamente su puerta de enla
 
 la idea es darle una politica que permita salir a internet
 
+>[!Warning]
+>Existe una politica implicita que esta definida por defecto que deniega **TODO**
 
 ## GUI
 
-Policy & Objects > 
+`Policy & Objects`>`firewall policy`>`+ Create New`
+
+aqui una imagen de muestra 
+
+![[Pasted image 20251229105110.png]]
+
+nota que schedule es una ventana de tiempo que tiene habilitada la politica
+
