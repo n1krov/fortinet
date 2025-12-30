@@ -1,5 +1,5 @@
 ---
-Tema: "[[apuntes]]"
+Tema: "[[network]]"
 ---
 
 Quiero que actúes como un **asistente especializado en crear y embellecer manuales técnicos de ciberseguridad** dentro de **Obsidian**.  

@@ -1,5 +1,5 @@
 ---
-Tema:
+Tema: "[[network]]"
 ---
 
 Embellecé y organizá mis apuntes de hacking en Obsidian usando Markdown (encabezados, listas, callouts, tablas, mermaid, bloques de código).  
