@@ -45,3 +45,20 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 estos objetos se utilizan para agregar en alguna configuracion de policys que querramos hacer
 
+### Address
+cosas de dirrecciones de red
+![[Pasted image 20251230085150.png]]
+
+Aqui existen objetos como  IP ranges subnet, [[FQDN]] y grupos para juntar ambos
+
+aqui puedes crear un address con la ip de la maquina windows.
+### Schedules
+
+
+
+### Services
+
+![[Pasted image 20251230085606.png]]
+
+Aqui podemos especificar el tipo de trafico el cual esta permitido navegar...
+ej. el equipo 
