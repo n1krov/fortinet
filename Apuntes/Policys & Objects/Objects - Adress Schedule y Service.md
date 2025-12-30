@@ -51,9 +51,13 @@ cosas de dirrecciones de red
 
 Aqui existen objetos como  IP ranges subnet, [[FQDN]] y grupos para juntar ambos
 
-aqui puedes crear un address con la ip de la maquina windows.
+	EJ CREANDO NUEVA ADDRESS
+	aqui puedes crear un address con la ip de la maquina windows.
+	le di la ip de la maquina del windows y la address se llama "Active Directory"
+	
 ### Schedules
 
+Puede ser en un intervalo de tiempo que ocurra una vez. o de manera recurrente
 
 
 ### Services
