@@ -1,3 +1,3 @@
 ---
-Tema: "[[Fortinet]]"
+Tema: "[[FORTINET]]"
 ---

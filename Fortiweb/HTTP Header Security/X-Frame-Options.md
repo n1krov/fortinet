@@ -1,6 +1,5 @@
 ---
 Tema: "[[HTTP Header Security]]"
-aliases:
 ---
 La cabecera **`X-Frame-Options`** es una medida de seguridad que le dice al navegador si una página web tiene permiso para ser cargada dentro de elementos de enmarcado como `<iframe>`, `<frame>` u `<object>` en otro sitio.
 
