@@ -48,5 +48,7 @@ adicionalmente en el momento de configurar static routes es conveniente crear un
 ![[Pasted image 20251230115427.png]]
 
 ahi se puede ver que en la parte de destino esta puesto CONTABILIDAD y no la `IP/CIDR` con el fin de que sea mas mantenible con el paso del tiempo lo que si al momento de defiinir el address debes marcar la casilla 
->
+
 - [ ] Static Route Configuration
+
+lo mismo hacemos para definir las redes locales de ambos sitios
