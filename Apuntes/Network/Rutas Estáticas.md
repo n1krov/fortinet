@@ -29,3 +29,12 @@ el Forti B es el que conoce al equipo **Windows 7** `10.0.2.10`
 
 lo que hay que hacer es que desde el site A se pueda llegar a la red del site B 
 y esto se lo puede hacer con el forti mediante rutas estaticas
+
+se configura primero en network>static routes la redes para ambos forti a y b 
+
+luego se crean las politicas, son dos para cada forti
+en B:
+- desde_A
+- hacia_A
+en A:
+- desde_B
