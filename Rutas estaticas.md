@@ -11,4 +11,13 @@ Aqui va el texto:
 
 ---
 
-para que ambos equipos se vean
+![[Pasted image 20251230102005.png]]
+
+como se puede ver en la imagen hay dos forti que estan conectados entre si, esto simula una red empresarial de diferentes areas donde cada area gestiona su propio firewall.
+
+en este caso ambos cuentan con salida a internet pero el winows server A no puede ver al Windows B poruqe necesitan definirse las rutas estaticas
+
+
+aca un ejemplo de configuracion de ruta estatica desde el site B
+
+![[Pasted image 20251230102727.png]]
