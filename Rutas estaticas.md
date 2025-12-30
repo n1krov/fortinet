@@ -21,3 +21,11 @@ en este caso ambos cuentan con salida a internet pero el winows server A no pued
 aca un ejemplo de configuracion de ruta estatica desde el site B
 
 ![[Pasted image 20251230102727.png]]
+
+en este caso en el site A esta el **Forti A** que es `172.21.0.1` y el **Forti B** `172.21.0.2`
+
+el Forti A es el que conoce al equipo **Windows Server** `10.0.1.10`
+el Forti B es el que conoce al equipo **Windows 7** `10.0.2.10`
+
+lo que hay que hacer es que desde el site A se pueda llegar a la red del site B 
+y esto se lo puede hacer con el forti mediante rutas estaticas
