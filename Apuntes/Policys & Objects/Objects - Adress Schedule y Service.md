@@ -59,6 +59,7 @@ Aqui existen objetos como  IP ranges subnet, [[FQDN]] y grupos para juntar ambos
 
 Puede ser en un intervalo de tiempo que ocurra una vez. o de manera recurrente
 
+las schedules te habilitan la policy durante un intervalo de tiempo
 
 ### Services
 
