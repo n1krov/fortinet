@@ -67,3 +67,13 @@ las schedules te habilitan la policy durante un intervalo de tiempo
 
 Aqui podemos especificar el tipo de trafico el cual esta permitido navegar...
 ej. el equipo 
+
+
+---
+### Internet Service Database
+
+Por si quieres especificar se puede aplicar estos servicios para ser mas restrictiva la politica
+
+en la configuracion de la politica se aplica en `Source` o `Destination`
+
+![[Pasted image 20251230092605.png]]
