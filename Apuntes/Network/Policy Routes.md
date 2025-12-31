@@ -28,3 +28,7 @@ para leer lo que dice la imagen debemos pensar lo siguiente: Suponiendo el escen
 >[!important]
 >Cuando **2** quiera enviar trafico de por ejemplo TCP por el puerto 80 a **5**, si esta configurada la politica de enrutamiento, debera hacer un forward traffic hacia la ip del 5
 
+
+desde la [[CLI]] podemos ver las policy route con 
+
+`diagnose firewall proute list`
