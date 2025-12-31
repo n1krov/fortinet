@@ -15,3 +15,4 @@ las politicas basadas en rutas requieren de [[Rutas Estáticas]] es requerido. l
 
 ![[Pasted image 20251231085242.png]]
 
+para leer lo que dice la imagen debemos pensar lo siguiente: Suponiendo el escenario
