@@ -18,3 +18,13 @@ situacion
 en la imagen se puede ver que amboos forti tienen dos interfaces conectadas al mikrotik
 en la configuracion dde las rutas estaticas se añadio para la segunda interfaz una distancia mas lejana que la de por defecto.
 pero que pasa cuando tienen la misma distancia y el enrutamiento se dirige al mismo destino, tienen la misma prioridad y todo???
+
+{explicar qeu es un ECMP}
+
+Condiciones
+
+- las distancias entre ambas interfaces por ej la del forti A, sus dos interfaces que apuntan al mikrotik deben ser iguales 
+- las distancias tambien deben ser iguales
+
+con estas condiciones se produce un balanceo ECMP
+el inconveniente es que desde la web interface no podemos modificar pero desde la [[CLI]] es posible
