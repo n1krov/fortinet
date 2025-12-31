@@ -80,3 +80,29 @@ luego podemos ver el estado con [[Ver Rutas - Monitoreo]] haciendo
 
 #### usage-based
 
+es por umbral de uso
+
+ojo hay que configurar en la interface tambien el umbral
+
+`config system interface`
+`edit port2`
+`set spillover-threshold (num)`
+`end`
+
+#### Deshabilitar configuraciones de balanceo por CLI
+
+`config system interface`
+`edit port2`
+`unset spillover-threshold`
+`next`
+puedes ver el cambio con `get | grep spill`
+
+tambien configuramos cada interfaz que tocamos
+
+`edit <interface>`
+`unset weight`
+`unset distance`
+`unset priority`
+`end`
+
+
