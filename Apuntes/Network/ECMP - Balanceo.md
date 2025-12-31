@@ -28,3 +28,16 @@ Condiciones
 
 con estas condiciones se produce un balanceo ECMP
 el inconveniente es que desde la web interface no podemos modificar pero desde la [[CLI]] es posible
+
+
+`config system settings ?`
+
+`get | grep ecmp`
+
+el que hay que notar es el `v4-ecmp-mode` 
+
+las opciones que tiene esta configuracion es
+- source-ip-based (default)
+- weight-based
+- usage-based
+- source-dest-ip-based
