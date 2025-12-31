@@ -104,5 +104,3 @@ tambien configuramos cada interfaz que tocamos
 `unset distance`
 `unset priority`
 `end`
-
-
