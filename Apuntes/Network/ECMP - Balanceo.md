@@ -37,6 +37,11 @@ el inconveniente es que desde la web interface no podemos modificar pero desde l
 
 el que hay que notar es el `v4-ecmp-mode` 
 
+##### Configurar `v4-ecmp-mode`
+
+config system settings
+get v4-ecmp-mode \[opcion\]
+
 las opciones que tiene esta configuracion es
 - source-ip-based (default)
 - weight-based
@@ -50,6 +55,25 @@ en esa sesion hace un sorteo de interfaz le toco y siempre usara esa por toda la
 #### source-dest-ip-based
 esta balancea segun la fuente y el destino. si navegas o se envia por ejemplo una traza ICMP a google.com este tomara una interfaz y usara esa para google.com, pero para yahoo.com puede tomar otra y asi
 #### weight-based
+este es basicamente por el peso de cada una de las interfaces configuradas en las rutas estaticas
+
+##### Configurar Rutas estaticas de la [[CLI]]
+
+`config router static`
+show
+
+edit 2
+get
+
+set weight 20
+> el peso puede ir desde 0 hasta 255
+
+next
+edit 1
+set weight 10
+
+end
+
 
 
 #### usage-based
