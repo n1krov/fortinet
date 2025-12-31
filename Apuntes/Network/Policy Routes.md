@@ -11,4 +11,7 @@ Aqui va el texto:
 
 ---
 
-aqui vamos a estar haciendo 
+las politicas basadas en rutas requieren de [[Rutas Estáticas]] es requerido. loq ue se hace en esta pestaña es agregar filtros y demas de seguridad
+
+![[Pasted image 20251231085242.png]]
+
