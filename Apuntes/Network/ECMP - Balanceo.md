@@ -29,6 +29,7 @@ Condiciones
 con estas condiciones se produce un balanceo ECMP
 el inconveniente es que desde la web interface no podemos modificar pero desde la [[CLI]] es posible
 
+#### Ver la configuracion del ECMP
 
 `config system settings ?`
 
@@ -41,3 +42,7 @@ las opciones que tiene esta configuracion es
 - weight-based
 - usage-based
 - source-dest-ip-based
+
+#### source ip based
+dada una sesion, forti hace una suerte de elegir qeu interfaz usar para dirigir el trafico hacia el mikrotik
+en esa sesio
