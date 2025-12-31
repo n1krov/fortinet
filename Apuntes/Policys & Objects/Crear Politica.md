@@ -46,7 +46,7 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 si  observamos el contexto
 
-![[Pasted image 20251217115810.png]]
+![[topologia.png]]
 
 
 en el site A no tiene salida a internet porque este justamente su puerta de enlace es hacia el fortigate. pero este no tiene ninguna politica implementada que le de acceso

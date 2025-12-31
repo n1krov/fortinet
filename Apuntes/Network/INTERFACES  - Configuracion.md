@@ -13,7 +13,7 @@ Aqui va el texto:
 
 Trabajando con esta situacion de laboratorio
 
-![[Pasted image 20251217115810.png]]
+![[topologia.png]]
 
 se puede ver qeu desde el forti en el site a y b pero en el site a para tomar de ejemplo tiene dos cables conectados a una nube que es el internet. esos dos estan conectados a una interfaz port2 y port3 respectivamente ya que port1 es la de administrador.
 
