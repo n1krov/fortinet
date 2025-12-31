@@ -45,4 +45,6 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 get router info routing-table {all,connected,static,isis,database,etc..}
 
-si ves `*>` es poruqe esta activa
+si ves `*>` es poruqe esta activa ademas puede tener 
+
+`S/C *> <subnet> [DISTANCIA/0] via <ip>, <puerto>, [PRIORIDAD/WEIGHT]`

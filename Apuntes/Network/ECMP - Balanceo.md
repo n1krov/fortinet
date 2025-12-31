@@ -74,6 +74,8 @@ set weight 10
 
 end
 
+luego podemos ver el estado con [[Ver Rutas - Monitoreo]] haciendo
+`get router info routing-table database`
 
 
 #### usage-based
