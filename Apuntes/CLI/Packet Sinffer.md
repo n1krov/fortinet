@@ -45,3 +45,19 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 tambien pertenece a [[network]]
 
 a la hora de hacer debug un comando muy util es el  uso de sniffer
+
+se usa
+`diagnose sniffer parametro1 interfaz filtros`
+
+parametro1 > a quien le quiero aplicar sniffer
+interfaz es eso
+filtros puede ser por ej: `icmp`
+
+ejemplo
+
+`diagnose sniffer packet port4 icmp`
+
+se puede ser mas especifico con los filtros
+`diagnose sniffer packet port4 "icmp && dst host <ip>"`
+
+![[Verbosidad+del+sniffer.png]]
