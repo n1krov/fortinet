@@ -75,3 +75,12 @@ y verificar que el `update-static-route` este habilitado
 `end`
 
 lo demas se puede editar para personalizacion
+
+`get router info routing-table database`
+#### Eliminar link health
+
+lo puedes hacer parandote y borrando el id
+
+`config system link-monitor`
+`delete 1`
+`end`

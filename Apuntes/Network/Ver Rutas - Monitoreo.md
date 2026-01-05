@@ -45,6 +45,13 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 get router info routing-table {all,connected,static,isis,database,etc..}
 
+
+el que mas se ocupa es 
+
+```sh
+get router info routing-table database
+```
+
 si ves `*>` es poruqe esta activa ademas puede tener 
 
 `S/C *> <subnet> [DISTANCIA/METRICA] via <ip>, <puerto>, [PRIORIDAD/WEIGHT]`
