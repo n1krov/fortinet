@@ -41,6 +41,9 @@ en A:
 - desde_B
 - hacia_B
 
+>[!important]
+>Las Interfaces se usan para generar rutas estaticas
+>Las rutas estaticas contienen asociadas [[Policy Routes]] y tambien Firewall Policys
 
 ----
 adicionalmente en el momento de configurar static routes es conveniente crear un objeto tipo `address` configurando ahi cada red para tener una mejor configuracion y mas entendible
