@@ -59,4 +59,19 @@ desde la [[CLI]] podemos verlo
 
 ![[Pasted image 20260105093553.png]]
 
-ahi aparece todo esto, que 
+ahi aparece todo esto, que la idea para configurarlo es hacer set de lo siguiente
+
+interfaz de origen
+`set srcintf algun_puerto`
+
+aquien le haremos ping
+`set server 8.8.8.8`
+
+el gateway
+`set gateway-ip ip_gateway` <--- la ip de la red donde esta el router q da salida a internet
+
+y verificar que el `update-static-route` este habilitado
+
+`end`
+
+lo demas se puede editar para personalizacion
