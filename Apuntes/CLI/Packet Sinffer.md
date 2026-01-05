@@ -59,5 +59,22 @@ ejemplo
 
 se puede ser mas especifico con los filtros
 `diagnose sniffer packet port4 "icmp && dst host <ip>"`
+`diagnose sniffer packet port4 "udp && port 53 && dst host <ip>"`
 
+#### Verbosidad del paquete
+
+adicionalmente puedes agregarle cierta verbosidad para que muestre mas o menos detalles
+
+
+`diagnose sniffer packet port4 "udp && port 53 && dst host <ip>" <level>`
 ![[Verbosidad+del+sniffer.png]]
+
+
+
+una muy util es usar la siguiente
+
+```sh
+diagnose sniffer packet any "icmp" 4 <cant_paquetes>
+```
+
+
