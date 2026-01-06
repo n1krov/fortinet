@@ -47,3 +47,7 @@ esto es muy parecido a [[Policy Routes]], que cuando un un paquete origen necesi
 
 en la pestaña de rules es lo mismo
 
+![[Pasted image 20260106104759.png]]
+
+lo importante es el **Outgoing Interfaces**
+Manual > cuando matchee seleccionar la interfaz y la zona SD-WAN
