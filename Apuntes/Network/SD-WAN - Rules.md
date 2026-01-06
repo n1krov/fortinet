@@ -50,4 +50,9 @@ en la pestaña de rules es lo mismo
 ![[Pasted image 20260106104759.png]]
 
 lo importante es el **Outgoing Interfaces**
-Manual > cuando matchee seleccionar la interfaz y la zona SD-WAN
+**Manual** > cuando matchee seleccionar la interfaz y la zona SD-WAN
+**best Quality** > aqui es con el mejor enlace en respecto a salud
+- se le añade dos config adicionales
+- measured SLA: Con quien prueba
+- Criterio: latencia/parqutes perdidos/jitter
+
