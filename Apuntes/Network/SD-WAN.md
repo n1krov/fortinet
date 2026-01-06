@@ -31,7 +31,18 @@ es una interfaz virtual que se compone de diferentes interfaces que estan conect
 ### Crear una zona y miembro sdwan
 
 
-
 aqui se puede ver la opcion donde crear un miembro para una zona sdwan dada
 
 ![[Pasted image 20260106090750.png]]
+
+nota que debes colocar
+- interface que este libre
+- la zona sdwan
+- gateway coorrespondiente
+	- en el caso del gateway debes poner la puerta de enlace de aquella que lleve hacia internet, en este caso, el **microtik**
+
+
+despues tendras que crear las [[Rutas Estáticas]] y asignarle ahi la sdwan, lo bueno es que ya c
+
+---
+
