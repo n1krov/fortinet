@@ -42,7 +42,19 @@ nota que debes colocar
 	- en el caso del gateway debes poner la puerta de enlace de aquella que lleve hacia internet, en este caso, el **microtik**
 
 
-despues tendras que crear las [[Rutas Estáticas]] y asignarle ahi la sdwan, lo bueno es que ya c
+despues tendras que crear las [[Rutas Estáticas]] y asignarle ahi la sdwan, lo bueno es que ya configuraste todo eso aqui, por lo que no necesitaras configurar una a una  cada ruta estatica si tienes sdwan configurada
+
+tambien deberas [[Crear Politica]]s 
+
+![[Pasted image 20260106092635.png]]
+> politica de ejemplo
+
+
+
+
 
 ---
+
+
+Sdwan trae ademas, una zona de politicas que es para definir como o por que interfaz enviar y recibir paquetes, y manejar mas facil el balanceo de carga.
 
