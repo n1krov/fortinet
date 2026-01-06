@@ -11,5 +11,10 @@ Aqui va el texto:
 
 ---
 
+### Que es SD-WAN
 
-quedaria por ver mañana toda lo que es SD-WAN hoy ya no tengo ganas xDDDD
+> acceso a internet definido por software
+
+![[Pasted image 20260106084028.png]]
+
+es una interfaz virtual que se compone de diferentes interfaces que estan conectados a diferentes clientes
