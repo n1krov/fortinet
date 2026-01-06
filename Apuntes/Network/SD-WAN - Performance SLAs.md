@@ -47,3 +47,14 @@ esta pestaña es parecida al [[Link Health Monitor]] y tiene precargado algunos 
 ![[Pasted image 20260106094628.png]]
 
 con esto nos sirve para saber que ISP es mejor o mas saludable
+
+en el caso de que querramos editar un elemento
+
+![[Pasted image 20260106095116.png]]
+
+lo importante son las siguientes cuestiones
+
+**Probe Mode** > de que forma el forti va a ejecutar las pruebas
+- **Passive**: 
+- **Active**: 
+- **Prefer Passive**: 
