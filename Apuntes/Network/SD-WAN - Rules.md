@@ -56,3 +56,8 @@ lo importante es el **Outgoing Interfaces**
 - measured SLA: Con quien prueba
 - Criterio: latencia/parqutes perdidos/jitter
 
+ambos trabajan con [[SLA - Target]]
+Lowest cost (SLA) > este elige por el menor costo, si tienen empates, mirara por elcosto y luego por prioridad definidas en el miembro sdwan, si empata en todo eso mirara por el primero nomas seleccionado
+mazimize bandwith (SLA) > balancea el trafijo entre los dos siempre y cuando se cumpla con el SLA
+
+
