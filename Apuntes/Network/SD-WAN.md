@@ -18,3 +18,8 @@ Aqui va el texto:
 ![[Pasted image 20260106084028.png]]
 
 es una interfaz virtual que se compone de diferentes interfaces que estan conectados a diferentes clientes
+
+>[!note]
+>esto se podria decir tambien que es la evolucion del balanceo [[ECMP - Balanceo]]
+
+- Para configurar una sd wan las interfaces deben estar libres, es decir, sin uso
