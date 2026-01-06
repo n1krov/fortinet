@@ -55,6 +55,13 @@ en el caso de que querramos editar un elemento
 lo importante son las siguientes cuestiones
 
 **Probe Mode** > de que forma el forti va a ejecutar las pruebas
-- **Passive**: 
-- **Active**: 
-- **Prefer Passive**: 
+- **Passive**: No manda pings, utiliza el trafico que enviemos
+- **Active**: forti envia paquetes haciendo PING
+- **Prefer Passive**: es passive, pero si no generemos trafico se comporta como active, enviando PING
+
+**Server** > quien es el servidor que le hacemos ping
+Participants > son los aquellos interfaces qeu van a participar de la prueba
+
+[[SLA - Target]]
+
+Link status > la parte mas parecida al [[Link Health Monitor]], ya que aca se define el tiempo a responder, sino se le dara como caido
