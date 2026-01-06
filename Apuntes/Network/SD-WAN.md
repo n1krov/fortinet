@@ -23,3 +23,15 @@ es una interfaz virtual que se compone de diferentes interfaces que estan conect
 >esto se podria decir tambien que es la evolucion del balanceo [[ECMP - Balanceo]]
 
 - Para configurar una sd wan las interfaces deben estar libres, es decir, sin uso
+
+
+---
+
+
+### Crear una zona y miembro sdwan
+
+
+
+aqui se puede ver la opcion donde crear un miembro para una zona sdwan dada
+
+![[Pasted image 20260106090750.png]]
