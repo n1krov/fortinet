@@ -41,3 +41,9 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 📘 Cuando te pase un texto o tema, generá el manual siguiendo estas reglas y estilo.
 
 ---
+
+esta pestaña es parecida al [[Link Health Monitor]] y tiene precargado algunos elementos llamados "testigos" que son direcciones a servidores que muy pocas veces estan caidos
+
+![[Pasted image 20260106094628.png]]
+
+con esto nos sirve para saber que ISP es mejor o mas saludable
