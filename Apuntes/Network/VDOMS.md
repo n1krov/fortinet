@@ -37,3 +37,22 @@ donde todos se conectan con todos.
 hay dos modos de trabajo con vdoms. **Split** o **Multi VDOM**
 ![[Pasted image 20260108112931.png]]
 
+Split
+este crea dos vdoms uno para administracion y otro para manjear el trafico de la red
+
+>[!IMPORTANT]
+> El multiVDOM no permitido en la licencia de prueba.
+
+#### Activar el modo multiple vdoms
+###### interfaz grafica
+system>settings
+
+si no tiene es hacerlo por cli
+
+###### [[CLI]]
+
+config system global
+set vdom-mode multi-vdom
+end
+
+
