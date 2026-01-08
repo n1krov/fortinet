@@ -23,3 +23,17 @@ problema: cuando generas varios vdoms y necesitas tener salida a internet necesi
 
 ![[Pasted image 20260108111903.png]]
 
+estos se conectan al principal con algo llamado **Internet VDOM Link** pero en este modelo no pueden verse los VDOM1 VDOM2 y VDOM3
+
+![[Pasted image 20260108112726.png]]
+
+
+esto lleva a otro modelo el cual es **mesh vdom**
+
+![[Pasted image 20260108112831.png]]
+donde todos se conectan con todos.
+
+
+hay dos modos de trabajo con vdoms. **Split** o **Multi VDOM**
+![[Pasted image 20260108112931.png]]
+
