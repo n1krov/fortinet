@@ -56,3 +56,5 @@ set vdom-mode multi-vdom
 end
 
 
+
+algo importante a destacar el management vdom se encarga de actualizar fotigate, conectarse a dif servicios etc, debe tener acceso a internet
