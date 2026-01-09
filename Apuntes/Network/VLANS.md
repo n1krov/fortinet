@@ -34,4 +34,17 @@ Aqui te va el texto:
 ![[Pasted image 20260109114714.png]]
 
 una VLAn nos permite subdividr una o mas ***INTERFACES fisicas*** en diferentes ***INTERFACES logicas*** 
-- esto se puede llevar a cabo gracias a la insercion de los frames de etherner
+- esto se puede llevar a cabo gracias a la insercion de las VLAN tags en los frames de ethernet
+
+### Trama ethernet
+
+![[Pasted image 20260109120136.png]]
+
+en fortigate se representa en la trama de la siguiente manera
+
+![[Pasted image 20260109120223.png]]
+
+como se puede ver fortigate tiene reservado 4 bytes reservado para el manejo de las tags de las vlans.
+los equipos de capa 2 (Swithces) tienen la capacidad de agragar o remover estos tags
+los equpos de capa 3 (fortigate) tienen la capacidad de sobreescribir estos tags, y esto lo hacen para poder enrutar todo el trafico correctamente
+
