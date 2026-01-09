@@ -79,3 +79,12 @@ y configurar las interfaces y usar **VDOM Link**
 
 ![[Pasted image 20260109085314.png]]
 
+Luego se configuran dos patas del cable virtual
+
+![[Pasted image 20260109090530.png]]
+
+Resta configurar del lado del VDOM LEGALES
+
+en Static Routes 
+
+![[Pasted image 20260109091009.png]]
