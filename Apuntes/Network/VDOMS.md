@@ -115,3 +115,5 @@ la idea recordar qeu es llegar a esto
 ![[Pasted image 20260108112831.png]]
 
 
+
+en Global VDOMS > interfaces  creamos el vdom LINK
