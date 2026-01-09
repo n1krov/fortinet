@@ -139,3 +139,14 @@ si estamosen una vdom1  y qeuremos ver o haceer otra cosa como vdom2 sin salir d
 podemos hacer 
 `sudo <vdom> comando`
 
+
+## Administracion
+
+El `super_admin` es el rol que tiene mas privilegios y es capaz de adminsitrar todos los vdoms
+
+Tambiense puede crear usuarios con Privilegios para un solo vdom o los vdoms que se reauiqera pero no tendra acceso a conifg globales
+
+ir a sytem>administrators y crear ahi administrador
+
+y elegir en que vdom tiene acceso (pueden ser varios)
+
