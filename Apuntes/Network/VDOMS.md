@@ -128,3 +128,14 @@ como solo la conexion es enter ellos se la hara por el virtual link, hay que con
 
 ## VDOMS por  CLI
 
+para acceder si estamos por la raiz 
+
+config vdom
+
+edit \<vdom\>
+
+
+si estamosen una vdom1  y qeuremos ver o haceer otra cosa como vdom2 sin salir de vdom1
+podemos hacer 
+`sudo <vdom> comando`
+
