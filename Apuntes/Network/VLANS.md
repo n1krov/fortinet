@@ -32,3 +32,6 @@ Aqui te va el texto:
 # VLANs en Fortigate
 
 ![[Pasted image 20260109114714.png]]
+
+una VLAn nos permite subdividr una o mas ***INTERFACES fisicas*** en diferentes ***INTERFACES logicas*** 
+- esto se puede llevar a cabo gracias a la insercion de los frames de etherner
