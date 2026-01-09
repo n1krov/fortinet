@@ -104,3 +104,7 @@ ahora ambos se conoocen pero INTERNET probablemente no sepa que red tiene el equ
 
 en ese caso la 10.10.10.1 estaria siendo Dentro del virtual link, el vdom de legales
 
+luego se configura su firewall policy y nota que aqui si tiene el NAT ACTIVADO
+
+![[Pasted image 20260109092046.png]]
+
