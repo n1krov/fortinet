@@ -124,3 +124,7 @@ obviamente El VDOM Legales para comunicarse con el VDOM contaduria deben hacer l
 como solo la conexion es enter ellos se la hara por el virtual link, hay que configurar
 - Static routes (para conocer la red del dispositivo destino)
 - Firewall Policy (habilitar trafico entrante y saliente)
+
+
+## VDOMS por  CLI
+
