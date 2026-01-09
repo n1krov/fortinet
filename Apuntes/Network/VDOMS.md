@@ -85,6 +85,22 @@ Luego se configuran dos patas del cable virtual
 
 Resta configurar del lado del VDOM LEGALES
 
+###### VDOM LEGALES
+
 en Static Routes 
 
 ![[Pasted image 20260109091009.png]]
+
+Luego por su Firewall policy
+
+![[Pasted image 20260109091116.png]]
+
+nota que la configuracion nat esta desactivada porque eso lo tiene que hacer VDOM INTERNET, y esta va enrutada
+
+###### VDOM INTERNET
+ahora ambos se conoocen pero INTERNET probablemente no sepa que red tiene el equipo que se conecte por lo cual hay que configurarl
+
+![[Pasted image 20260109091803.png]]
+
+en ese caso la 10.10.10.1 estaria siendo Dentro del virtual link, el vdom de legales
+
