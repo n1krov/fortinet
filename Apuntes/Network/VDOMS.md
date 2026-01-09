@@ -117,3 +117,10 @@ la idea recordar qeu es llegar a esto
 
 
 en Global VDOMS > interfaces  creamos el vdom LINK
+
+configuramos una subreed que no este en uso
+obviamente El VDOM Legales para comunicarse con el VDOM contaduria deben hacer lo sig:
+
+como solo la conexion es enter ellos se la hara por el virtual link, hay que configurar
+- Static routes
+- Firewall Policy (habilitar )
