@@ -108,3 +108,10 @@ luego se configura su firewall policy y nota que aqui si tiene el NAT ACTIVADO
 
 ![[Pasted image 20260109092046.png]]
 
+#### MESHED VDOMS - Conectar Distintos VDOMs y que se vean entre si
+
+la idea recordar qeu es llegar a esto
+
+![[Pasted image 20260108112831.png]]
+
+
