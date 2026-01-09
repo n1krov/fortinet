@@ -57,3 +57,17 @@ end
 
 
 algo importante a destacar el management vdom se encarga de actualizar fotigate, conectarse a dif servicios etc, debe tener acceso a internet
+
+### VDOM - INTERNET (Configuracion)
+
+como se muestra en la imagen la idea es tener vdoms y que uno solo se encargue de enrutar a internet los diferentes vdoms a suis respectivas ISPs
+
+![[Pasted image 20260108112726.png]]
+
+> el vdom de internet estara por encima ya que el se encargara de dar salida a internet  a los demas vdoms
+
+si se llama INTERNET, cofigurarlo por CLI
+
+config vdom
+edit INTERNET
+
