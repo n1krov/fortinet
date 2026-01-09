@@ -66,8 +66,16 @@ como se muestra en la imagen la idea es tener vdoms y que uno solo se encargue d
 
 > el vdom de internet estara por encima ya que el se encargara de dar salida a internet  a los demas vdoms
 
-si se llama INTERNET, cofigurarlo por CLI
+si se llama INTERNET, por CLI y acceder a su configuracion seria
 
 config vdom
 edit INTERNET
+
+ahi ya nos paramos en el vdom de internet
+
+
+ahora a esos vdoms para enrutarlos tenemos que estar parado en la VDOM global
+y configurar las interfaces y usar **VDOM Link**
+
+![[Pasted image 20260109085314.png]]
 
