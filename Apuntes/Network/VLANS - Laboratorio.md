@@ -64,3 +64,14 @@ switchport mode trunk
 end
 ```
 
+
+luego de copytastear podemos meter un 
+
+```sh
+show vlan
+```
+
+##### Config del fortigate
+
+admin y la pass es en blanco y ahi despues debes poner una clave
+
