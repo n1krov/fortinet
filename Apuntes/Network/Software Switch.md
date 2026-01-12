@@ -35,4 +35,11 @@ para crear un software switch es ir en  network>interface
 y en el tipo poner Software switch y colocar las interfaces que van a pertenecer a ese sw switch
 
 el rol tipo lan
-la red in
+la red inventamos
+
+y se puede dejar el dhcp server habilitado quedando algo asi
+
+![[Pasted image 20260112115236.png]]
+luego con el [[GNS3]] podemos agregar maquinas y conectarlas al forti de software switch obviamente con los puertos configurados 
+luego para que de ip metemos a la maquina y le damos `dhcp` y asignara automaticamente
+
