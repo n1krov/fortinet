@@ -82,3 +82,19 @@ config system interface
 edit port1
 append allowaccess http
 ```
+
+
+recordar que 
+
+![[Pasted image 20260109120223.png]]
+
+- los equipos de capa 2 (Swithces) tienen la capacidad de agragar o remover estos tags
+- los equpos de capa 3 (fortigate) tienen la capacidad de sobreescribir estos tags, y esto lo hacen para poder enrutar todo el trafico correctamente
+
+si el equipo de contables de la vlan 101 le quiere hacer un ping al equipo de la vlan 103
+al pasar por el switch del sitio donde esata la vlan101 va a detectar el puerto que tiene asignada a la vlan101 y la inserta el vlan tag a las tramas provenientes de eese equipo
+
+cuando pase por el router este va a reescribir esa parte de la trama reemplazando el 101 por 103 y se la envia al switch que entiende el vlan tag 103, este switch termina finalmente removiendo el vlan tag 103 porque ya no necesita y luego llegga a destino
+
+los equipos finales no manejan vlan tags, solo equipos intermedio de capa 2 y 3, switches y routers
+ 
