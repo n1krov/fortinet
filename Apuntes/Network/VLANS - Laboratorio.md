@@ -75,3 +75,10 @@ show vlan
 
 admin y la pass es en blanco y ahi despues debes poner una clave
 
+##### habilitar http
+
+```sh
+config system interface
+edit port1
+append allowaccess http
+```
