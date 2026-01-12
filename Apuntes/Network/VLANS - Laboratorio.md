@@ -83,6 +83,19 @@ edit port1
 append allowaccess http
 ```
 
+Luego crear las interfaces en network>interface
+hay 3 vlans 
+101 -> port2 legales
+102 -> port2 contable
+103 -> port3 sistemas
+
+luego para la habilitacion del trafico y comunicacion entre ellas se debe crear las firewall policys
+
+aqui lo importante es las incomming y outgoing interfaces, esas deben tener configuradas las interfaces vlans, NO los puertos.
+
+
+
+---
 
 recordar que 
 
@@ -97,4 +110,3 @@ al pasar por el switch del sitio donde esata la vlan101 va a detectar el puerto 
 cuando pase por el router este va a reescribir esa parte de la trama reemplazando el 101 por 103 y se la envia al switch que entiende el vlan tag 103, este switch termina finalmente removiendo el vlan tag 103 porque ya no necesita y luego llegga a destino
 
 los equipos finales no manejan vlan tags, solo equipos intermedio de capa 2 y 3, switches y routers
- 
