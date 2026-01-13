@@ -56,6 +56,12 @@ En el modo transparente el forti reenvia los paqutetes (forward) acuerdo ala cap
 
 `config system settings`
 `set opmode transparent`
+
+`set manageip ip`
+> esta ip puede ser la que te da por dhcp o cualquiera
+
+`set gateway <ip>`
 `end`
 
-> si falla probablemente sea porque no se puede cambiar el modo si tienes swtiches administrados o vlans administradas
+> Si falla probablemente sea porque no se puede cambiar el modo si tienes *swtiches* administrados o *vlans* administradas, por lo que hay que hacer una [[Limpieza De Switches Administrados Por CLI]].
+
