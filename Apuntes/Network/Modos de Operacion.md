@@ -72,3 +72,4 @@ si quieres conectar entre la maquina y el router
 
 fijate en que puertos estan puestos cada equipo y para habilitar el trafico entrante y saliente solo debes habillitarla configurando una ***Firewall Policy***
 
+
