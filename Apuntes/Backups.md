@@ -118,16 +118,6 @@ Al ejecutar este comando, verás las opciones disponibles:
 
 ![[Pasted image 20251218120743.png]]
 
-**Opciones comunes:**
-
-| Destino | Comando | Uso |
-|---------|---------|-----|
-| **Disco local** | `execute backup disk` | Guardar en almacenamiento interno |
-| **FTP** | `execute backup config ftp` | Servidor FTP remoto |
-| **TFTP** | `execute backup config tftp` | Servidor TFTP remoto |
-| **SCP** | `execute backup config scp` | Copia segura SSH |
-| **USB** | `execute backup config usb` | Dispositivo USB |
-
 ---
 
 #### Backup a Servidor FTP
