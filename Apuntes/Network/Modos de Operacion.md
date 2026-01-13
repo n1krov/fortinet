@@ -30,5 +30,11 @@ Cuando te pase un texto de un concepto, transformalo en una **nota wiki estructu
 ---
 
 modo operacion
+
+Modo NAT
+
 es el modo en el que utilizamos el fortigate hasta el dia de hoy
+de este modo. el equipo enruta el trafico a traves de la capa 3 del modelo OSI, actua como un **router**
+Las interfaces del fortigate -> **Tienen direcciones ip asociadas entre ellas**, a excepcion de cuando se crea un virtual switch. y es ese virtual switch que tiene direccinoes ip asociada en sus interfaces
+
 
