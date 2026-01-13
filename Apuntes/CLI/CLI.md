@@ -11,3 +11,7 @@ Tema: "[[apuntes]]"
 `show`: muestra las configs de ese puerto
 `append allowaccess http`
 `end` <-- Para grabar las configuraciones
+
+para mostrar las referencias de algo
+`show | grep -fi <target>` ej ***fortilink***
+

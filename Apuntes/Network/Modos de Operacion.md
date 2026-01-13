@@ -53,3 +53,9 @@ En el modo transparente el forti reenvia los paqutetes (forward) acuerdo ala cap
 
 
 ###### Configurarlo desde la CLI
+
+`config system settings`
+`set opmode transparent`
+`end`
+
+> si falla probablemente sea porque no se puede cambiar el modo si tienes swtiches administrados o vlans administradas
