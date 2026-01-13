@@ -50,3 +50,4 @@ En el modo transparente el forti reenvia los paqutetes (forward) acuerdo ala cap
 ![[Pasted image 20260113090831.png]]
 
 > lo que tiene es que la instalacion es transparente, por lo que como se ve en la imagen, se puede colocar entre el router y el ISP o las PCs y el router, es independiente el lugar
+
