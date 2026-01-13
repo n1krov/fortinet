@@ -32,5 +32,22 @@ Cuando te pase un texto de un concepto, transformalo en una **nota wiki estructu
 Siguiendo con la parte de  [[Modos de Operacion]]
 existe una configuracion adicional que se puede usar en ambos modos tanto para transparente o NAT y esta es la Virtual wire pair que esta dentro de `network>Interfaces`
 
+![[Pasted image 20260113104521.png]]
 
-con el virtual wire pair, lo que se hace es crear un circuito en donde seleccionamos 2 interfaces y el trafico 
+con el virtual wire pair, lo que se hace es crear un circuito en donde seleccionamos 2 interfaces y el trafico que entre por alguna de ellas SOlamente puede ir hacia la otra a la que estaba asociada.
+esto pierde conectividad total con el resto de las interfaces
+
+esto basicamente crea un circuito logico entre ellas dos y las aisla totalmetne de las demas
+
+- ventaja: nos reduce el broadcast {no tengo ni idea que significa  esto}
+
+![[Pasted image 20260113104554.png]]
+
+> nota que hasta antes de configurar teniamos el puerto 2 y 3 en el mismo dominio de broadcast. ahora en esa imagen se ve separado
+
+si creamos el virtual wire pair tambien al lado en [[policys&objects]] se crea una opcion llamada "firewall virtual wire pair policy"
+
+y la configuracion es parecida, solo cambia una pequeña parte
+
+![[Pasted image 20260113104927.png]]
+
