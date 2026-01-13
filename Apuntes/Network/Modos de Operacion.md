@@ -29,12 +29,20 @@ Cuando te pase un texto de un concepto, transformalo en una **nota wiki estructu
 
 ---
 
-modo operacion
+## modo de operacion
 
-Modo NAT
+#### Modo NAT
+> NAT -> Routing
+![[Pasted image 20260113084624.png]]
 
 es el modo en el que utilizamos el fortigate hasta el dia de hoy
 de este modo. el equipo enruta el trafico a traves de la capa 3 del modelo OSI, actua como un **router**
 Las interfaces del fortigate -> **Tienen direcciones ip asociadas entre ellas**, a excepcion de cuando se crea un virtual switch. y es ese virtual switch que tiene direccinoes ip asociada en sus interfaces
 
+#### Modo Transparente
+> Transparente -> Switching
+![[Pasted image 20260113084758.png]]
 
+En el modo transparente el forti reenvia los paqutetes (forward) acuerdo ala capa 2 delo modelo OSI (Mac address) actuando asi como un transparent bridge.
+- No tiene direccinoes ip normalmente ya que actua como switch de capa 2
+- Ventaja: no requiere ningun cambio ni reconfiguracion de nuestra red
