@@ -49,4 +49,15 @@ en la raiz
 
 `config system ntp`
 `set ntpsync disable`
-set server-mode disabal
+`set server-mode disable`
+`end`
+
+
+`config system dhcp server`
+`delete 1`
+
+`config system interface`
+`delete fortilink`
+`end`
+
+

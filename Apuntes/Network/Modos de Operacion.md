@@ -54,6 +54,8 @@ En el modo transparente el forti reenvia los paqutetes (forward) acuerdo ala cap
 
 ###### Configurarlo desde la CLI
 
+> Si falla probablemente sea porque no se puede cambiar el modo si tienes *swtiches* administrados o *vlans* administradas, por lo que hay que hacer una [[Limpieza De Switches Administrados Por CLI]].
+
 `config system settings`
 `set opmode transparent`
 
@@ -63,5 +65,10 @@ En el modo transparente el forti reenvia los paqutetes (forward) acuerdo ala cap
 `set gateway <ip>`
 `end`
 
-> Si falla probablemente sea porque no se puede cambiar el modo si tienes *swtiches* administrados o *vlans* administradas, por lo que hay que hacer una [[Limpieza De Switches Administrados Por CLI]].
+
+si quieres conectar entre la maquina y el router
+
+![[Pasted image 20260113100035.png]]
+
+fijate en que puertos estan puestos cada equipo y para habilitar el trafico entrante y saliente solo debes habillitar la politica
 
