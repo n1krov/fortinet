@@ -46,3 +46,7 @@ Las interfaces del fortigate -> **Tienen direcciones ip asociadas entre ellas**,
 En el modo transparente el forti reenvia los paqutetes (forward) acuerdo ala capa 2 delo modelo OSI (Mac address) actuando asi como un transparent bridge.
 - No tiene direccinoes ip normalmente ya que actua como switch de capa 2
 - Ventaja: no requiere ningun cambio ni reconfiguracion de nuestra red
+
+![[Pasted image 20260113090831.png]]
+
+> lo que tiene es que la instalacion es transparente, por lo que como se ve en la imagen, se puede colocar entre el router y el ISP o las PCs y el router, es independiente el lugar
