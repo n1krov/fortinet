@@ -51,6 +51,9 @@ Como se ve en la imagen
 - se recomienda dos interfaces de [[Heartbeat]]
 
 
+>[!important] Las interfaces de management deben tener IP MANUAL
+
+
 ### Elementos que no son sincronizados
 
 las interfaces de administrador (puerto1 de cada equipo) ya que sino no se podria administrar cada forti de manera independiente
