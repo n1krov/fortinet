@@ -49,3 +49,17 @@ Como se ve en la imagen
 - Mismas interfaces en cada fortigate conectados al mismo dominio de broadcast
 - soportar interfaces DHCP y PPPoE
 - se recomienda dos interfaces de [[Heartbeat]]
+
+
+### Elementos que no son sincronizados
+
+las interfaces de administrador (puerto1 de cada equipo) ya que sino no se podria administrar cada forti de manera independiente
+
+HA override
+HA device priority
+HA virtual cluster priority
+FortiGate hostname
+Ping server HA priorities
+
+Licencias
+cache
