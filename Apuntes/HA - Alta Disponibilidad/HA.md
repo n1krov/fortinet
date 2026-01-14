@@ -36,3 +36,5 @@ debemos tener un balanceador de carga entre **los equpos de la red y el fortigat
 el equipo primario recibe las peticiones de los usuaris y el las distribuye entre el primario y los secundarios
 
 todo es posible gracias al [[Fortigate Clustering Protocol - FGCP]]
+
+### Rq

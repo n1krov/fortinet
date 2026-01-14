@@ -16,3 +16,15 @@ fortigate clustering protocol
 {que es esto}
 
 un cluster usa FGCP para 
+- descubrir que otros fortigates pertenecesn al mismo Grupo HA
+- seleccionar el primario
+- sincronizar datos y configuracion
+- detectar cuando el fortigate falla
+
+este protocolo tambien corre en el puerto 703 por tcp
+- 0x8890 -> para NAT
+- 0x8891 -> para transparente
+
+en el puerto 23 por TCP 
+- 0x8893 -> para configuracion y sincronizacion
+
