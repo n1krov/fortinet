@@ -47,4 +47,5 @@ Como se ve en la imagen
 	- Igual lincencias en un mismo miembro de cluster
 - Un link (preferiblemente dos o mas) entre los dispositivos fortigate
 - Mismas interfaces en cada fortigate conectados al mismo dominio de broadcast
-- DHCP y PPPoE 
+- soportar interfaces DHCP y PPPoE
+- se recomienda dos interfaces de [[Heartbeat]]
