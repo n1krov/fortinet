@@ -37,4 +37,14 @@ el equipo primario recibe las peticiones de los usuaris y el las distribuye entr
 
 todo es posible gracias al [[Fortigate Clustering Protocol - FGCP]]
 
-### Rq
+### Requerimientos
+
+Como se ve en la imagen
+
+![[Pasted image 20260114094105.png]]
+
+- Dos o cuatro Identicos dispositivos fortigate
+	- Igual lincencias en un mismo miembro de cluster
+- Un link (preferiblemente dos o mas) entre los dispositivos fortigate
+- Mismas interfaces en cada fortigate conectados al mismo dominio de broadcast
+- DHCP y PPPoE 
