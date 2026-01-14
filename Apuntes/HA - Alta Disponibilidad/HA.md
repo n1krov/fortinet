@@ -28,5 +28,11 @@ el Activo-pasivo de alta disponibilidad
 
 Activo - activo
 
-> 
+> Todos los equipos procesan trafico, sin embargo se mantiene el esquema primario y secundario
+ 
 ![[Pasted image 20260114090027.png]]
+
+debemos tener un balanceador de carga entre **los equpos de la red y el fortigate** pero fortinet nos ofrece este modo y es el equipo primario. 
+el equipo primario recibe las peticiones de los usuaris y el las distribuye entre el primario y los secundarios
+
+todo es posible gracias al [[Fortigate Clustering Protocol - FGCP]]
