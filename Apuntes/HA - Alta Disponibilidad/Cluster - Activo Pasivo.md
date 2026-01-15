@@ -66,3 +66,5 @@ existe por ultmo la opcion para reservar la interfaz de administracion, eso hay 
 
 asegurarse de poner la interfaz correspondiente previamente configurada y la Subnet
 
+y lo mismo para los dispositivos que quieras conectar
+
