@@ -51,9 +51,18 @@ el modo activo pasivo tiene las siguientes opciones
 - device priority.
 
 para configuraciones de cluster
+
 - el nombre del grupo
 - password
+> si estos valores no coinicden en otros forti probablemente no funcione
+
 - session pickup -> sincroniza las sesiones.
-- monitor interfaces
-- heartbeat interfaces
- 
+- monitor interfaces > si se desconecta el cable desde el cliente y forti lo detecta, esta opcion se encargara de reemplazar por un nuevo activo
+- heartbeat interfaces (si tuvieramos un cluster de 4 necesitariamos un switch de por mediopara que las interfaces de [[Heartbeat]] puedan comunicarse entre si)
+
+existe por ultmo la opcion para reservar la interfaz de administracion, eso hay que habilitarlo 
+
+![[Pasted image 20260115093459.png]]
+
+asegurarse de poner la interfaz correspondiente previamente configurada y la Subnet
+
