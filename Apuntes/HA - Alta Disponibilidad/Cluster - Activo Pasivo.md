@@ -35,6 +35,7 @@ para construir un cluster de fortigates en modo activo-pasivo
 contaremos con la sig topologia de red
 
 ![[Pasted image 20260115085636.png]]
+
 ## GUI
 
 `system > HA` y el modo aparece como 
@@ -55,3 +56,4 @@ para configuraciones de cluster
 - session pickup -> sincroniza las sesiones.
 - monitor interfaces
 - heartbeat interfaces
+ 
