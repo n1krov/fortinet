@@ -37,3 +37,17 @@ para construir un cluster de fortigates en modo activo-activo contaremos con la 
 #### Esquema - Modo de Balanceo en Activo-Activo
 
 ![[Captura de pantalla_20260119_113157.png]]
+
+Sin embargo a nivel de cliente-servidor el cliente no sabe qeu por medio existe un cluster. solo conoce como mucho el forti y a nivel de capa 2, una mac address. Es por eso que forti lo que hace es asignar en el cluster virtual MAC Address
+
+![[Captura de pantalla_20260119_114031.png]]
+
+en el caso de uqe un fortigate caiga, el nuevo primario hereda todas virtual MAC address  del anterior
+
+---
+
+Tambien  se pueden armar cluster de [[VDOMS]]
+
+![[Captura de pantalla_20260119_114541.png]]
+
+y el orden puede ser cualquera, lo unico es que solamente estamos restringidos a 2 dispositivos fisicos para este tipo de clustering
