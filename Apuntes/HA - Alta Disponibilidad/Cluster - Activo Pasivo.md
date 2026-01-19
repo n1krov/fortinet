@@ -69,4 +69,22 @@ asegurarse de poner la interfaz correspondiente previamente configurada y la Sub
 y lo mismo para los dispositivos que quieras conectar
 
 
+----
+#### Seleccion de FortiGate Primario
 
+hay dos formas comunes que tiene el fortigate al momento de seleccionar el primario
+
+###### Override Disabled
+
+![[Pasted image 20260119105459.png]]
+
+como se puede ver en la imagen la negocicacion comieza por la cantidad de puertos conectados que tiene, luego va hacia el uptime del HA
+luego al numero de prioridad y por ultimo al numero de serie
+
+###### Override Enabled
+
+![[Captura de pantalla_20260119_110152.png]]
+
+como se ve en la imagen la prioridad arranca al reves del override Disabled:
+
+puertos conectados > numero de priorirdad > HA Uptime > serial number
