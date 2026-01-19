@@ -33,3 +33,7 @@ para construir un cluster de fortigates en modo activo-activo contaremos con la 
 
 ![[Pasted image 20260115085636.png]]
 
+
+#### Esquema - Modo de Balanceo en Activo-Activo
+
+![[Captura de pantalla_20260119_113157.png]]
