@@ -88,3 +88,15 @@ luego al numero de prioridad y por ultimo al numero de serie
 como se ve en la imagen la prioridad arranca al reves del override Disabled:
 
 puertos conectados > numero de priorirdad > HA Uptime > serial number
+
+> HA override no se sincroniza en los dos dispositivos, por lo que hay que configurar esta opcion en ambos equipos, o en los n equipos del cluster
+
+para configurar la opcion de override hacer lo siguiente:
+
+en la [[CLI]]
+
+`config system ha`
+`set override enable`
+`end`
+
+> esto para todos los fortigates de tu cluster
