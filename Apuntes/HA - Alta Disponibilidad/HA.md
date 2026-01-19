@@ -66,3 +66,7 @@ Ping server HA priorities
 
 Licencias
 cache
+
+### HA - Actualizaciones
+
+para actualizaciones y demas, **siempre hacerlo contra el primario**, esto es muy importante ya que el se encargara de actualizar a cada miembro secundario, luego de eso el se pondra como secundario y se aplicara la actualizacion.

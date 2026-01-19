@@ -33,6 +33,8 @@ para construir un cluster de fortigates en modo activo-activo contaremos con la 
 
 ![[Pasted image 20260115085636.png]]
 
+para elegir el modo simplemente cambiar en el Mode en `System > HA`
+![[Captura de pantalla_20260119_115118.png]]
 
 #### Esquema - Modo de Balanceo en Activo-Activo
 
