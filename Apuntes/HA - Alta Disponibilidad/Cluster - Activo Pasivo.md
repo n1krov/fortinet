@@ -68,3 +68,5 @@ asegurarse de poner la interfaz correspondiente previamente configurada y la Sub
 
 y lo mismo para los dispositivos que quieras conectar
 
+
+
