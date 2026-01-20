@@ -123,3 +123,32 @@ Su función principal hoy en día es servir de "capa de cifrado" para otros prot
 | **Cifrado**        | Paquete completo             | Solo datos (Payload)                |
 | **Uso común**      | VPN Sitio a Sitio / Internet | Host a Host / Combinado (GRE, L2TP) |
 | **Oculta IPs**     | Sí (Privacidad total)        | No (Visibles en tránsito)           |
+
+
+## Topologias de RED
+
+
+![[Pasted image 20260120113019.png]]
+
+### **1. Simple (Punto a Punto)**
+
+Es la forma más básica de conexión.
+
+- **Estructura:** Conecta directamente una oficina sucursal (**Branch office**) con la oficina central (**Headquarters**).
+- **Uso:** Ideal para empresas pequeñas con una sola sucursal que necesita acceder a los recursos del servidor central.
+
+### **2. Hub-and-Spoke (Estrella)**
+
+Es la topología más común en empresas en crecimiento.
+
+- **Estructura:** El **Headquarters** actúa como el "Hub" (centro) y todas las sucursales son los "Spokes" (radios).
+- **Funcionamiento:** Si una sucursal quiere hablar con otra, el tráfico normalmente debe pasar primero por la oficina central.
+- **Ventaja:** Centraliza el control y es más fácil de configurar que conectar todos entre sí.
+
+### **3. Full Mesh and Partial Mesh (Malla)**
+
+Es la configuración más robusta y compleja.
+
+- **Full Mesh (Malla Completa):** **Todos** los sitios tienen un túnel directo con todos los demás. Si se cae un enlace, hay múltiples rutas alternativas.
+- **Partial Mesh (Malla Parcial):** Solo algunos sitios (los más críticos) están conectados entre sí directamente, mientras que otros siguen usando el modelo de oficina central.
+- **Uso:** Se usa cuando se necesita baja latencia entre sucursales (ej. telefonía IP entre oficinas) o alta disponibilidad crítica.
