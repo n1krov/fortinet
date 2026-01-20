@@ -34,3 +34,55 @@ IKE quiere decir internet key exchange lo que hace es negociar las llaves privad
 > tener en cuenta que ipsec es un estandar y no es propietario de ninguna marca
 
 
+IKE define 2 fases 
+- fase 1
+- fase 2
+
+posee 2 versiones
+IKEv1 (legacy, mayor adopcion)
+IKEv2 (nuevo, operacion simple)
+
+ike se encarga de establecer SA (secure asociations) 
+
+## **Resumen: Internet Key Exchange (IKE)**
+
+IKE es el protocolo encargado de establecer un túnel seguro mediante la negociación de llaves privadas, autenticación y cifrado.
+
+---
+
+### **1. Datos Técnicos Básicos**
+
+- **Puertos:** Utiliza **UDP 500** por defecto.
+    
+- **NAT Traversal:** Cambia a **UDP 4500** cuando el tráfico debe cruzar un NAT.
+    
+
+### **2. Versiones de IKE**
+
+- **IKEv1:** Es la versión **legacy** (antigua), pero actualmente tiene la **mayor adopción** en la industria.
+    
+- **IKEv2:** Versión más reciente, diseñada para una **operación más simple** y eficiente.
+    
+
+### **3. Negociación y Fases (SA)**
+
+IKE permite que ambas partes configuren sus **Security Associations (SA)**, que son la base de las funciones de seguridad en IPsec. El proceso se divide en dos fases críticas:
+
+- **Fase 1 (IKE SA):**
+    
+    - **Objetivo:** Establecer un canal seguro y autenticado entre los dos dispositivos (ej. entre dos FortiGate).
+        
+    - **Resultado:** Se genera la **IKE SA**.
+        
+- **Fase 2 (IPsec SA):**
+    
+    - **Objetivo:** Negociar los parámetros para proteger el tráfico de datos real que pasará por el túnel.
+        
+    - **Resultado:** Se genera la **IPsec SA**, que se usa para cifrar y descifrar los datos enviados y recibidos.
+        
+
+---
+
+### **Punto Clave para Configuración**
+
+> Los administradores de red deciden qué algoritmos de cifrado y autenticación se permiten durante este intercambio para garantizar la integridad y privacidad.
