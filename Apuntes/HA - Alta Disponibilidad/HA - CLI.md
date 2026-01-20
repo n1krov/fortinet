@@ -58,3 +58,13 @@ los fortigate a la hora de saber si estan sincronizados, hacen un checksum entre
 tambien podemos ejecutar o cambiar de usuario haciendo 
 `execute ha manage <num_root_primary> admin`
 
+comando para testear el failover de un cluster
+`execute ha failover set 1` / `execute ha failover unset 1`
+
+`execute ha failover status`
+
+> esto es solo con propositos de prueba, no hacerlo en produccion
+
+`get system ha status`
+para ver el estado del cluster
+
