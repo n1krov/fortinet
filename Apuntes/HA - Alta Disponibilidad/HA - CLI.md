@@ -45,3 +45,16 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 HA comandos por [[CLI]]
 
 
+`diagnose sys ha status`
+
+con esto se puede ver quienes son los equipos conectados al cluster. quien es el primario y secundarios, hostnames, prioridades del serial number y prioridad de usuario
+
+tambien muestra `primary_ip` que es la ip asociasda da la interfaz de [[Heartbeat]], pero esta es un manejo interno del kernel a la hora de configurar el cluster segun el serial number. el que tenga el serial number mas alto tiene la direccion ip mas baja
+
+
+`diagnose sys ha checksum cluster`
+los fortigate a la hora de saber si estan sincronizados, hacen un checksum entre ellos en el archivo de configuracion. 
+
+tambien podemos ejecutar o cambiar de usuario haciendo 
+`execute ha manage <num_root_primary> admin`
+
