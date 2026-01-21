@@ -24,6 +24,31 @@ Este manual cubre el procedimiento completo:  verificación de licencia, backup,
 
 ---
 
+## 📋 Referencia Rápida
+
+```bash
+# VERIFICACIÓN
+get system status                     # Ver estado de licencia
+
+# BACKUP
+execute backup config ftp "<nombre>" <ip_ftp> <user> <pass>
+
+# FACTORY RESET
+execute factoryreset                  # Reset total
+execute factoryreset2                 # Reset conservando red (recomendado)
+
+# RESTORE
+execute restore config ftp "<nombre>" <ip_ftp> <user> <pass>
+
+# VERIFICACIÓN POST-RESTORE
+get system status                     # Confirmar licencia
+get system interface physical         # Verificar interfaces
+show firewall policy                  # Verificar políticas
+get router info routing-table all     # Verificar rutas
+execute ping 8.8.8.8                  # Probar conectividad
+```
+
+
 ## 🔍 Identificar Licencia Expirada
 
 ### Por GUI
@@ -593,32 +618,6 @@ El procedimiento de **factory reset para renovación de licencia** en FortiGate 
 > - Dispositivos de evaluación
 > - Troubleshooting extremo
 > - Preparación para reventa/redeployment
-
----
-
-## 📋 Referencia Rápida
-
-```bash
-# VERIFICACIÓN
-get system status                     # Ver estado de licencia
-
-# BACKUP
-execute backup config ftp "<nombre>" <ip_ftp> <user> <pass>
-
-# FACTORY RESET
-execute factoryreset                  # Reset total
-execute factoryreset2                 # Reset conservando red (recomendado)
-
-# RESTORE
-execute restore config ftp "<nombre>" <ip_ftp> <user> <pass>
-
-# VERIFICACIÓN POST-RESTORE
-get system status                     # Confirmar licencia
-get system interface physical         # Verificar interfaces
-show firewall policy                  # Verificar políticas
-get router info routing-table all     # Verificar rutas
-execute ping 8.8.8.8                  # Probar conectividad
-```
 
 ---
 

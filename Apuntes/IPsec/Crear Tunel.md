@@ -77,16 +77,47 @@ Aquí defines el "idioma" de seguridad para la **IKE SA**. Ambos extremos deben 
 
 Esta es la parte donde defines **qué tráfico** tiene permiso para entrar al túnel.
 
-- **Local Address / Remote Address:** Aquí especificas las subredes internas que se van a comunicar.
+![[Captura de pantalla_20260121_093700.png]]
+
+
+> Importante cambiarle el nombre por la nomenclatura a "**v2.**"
+> en lo posible tambien trabajar con objetos
+
+La Fase 2 es donde se define **qué tráfico específico** proteger y cómo se cifrarán esos datos finales.
+
+### 1. Selectores de Tráfico (Imagen 5 y 6)
+
+- **Local/Remote Address:** Define las subredes que tienen permitido cruzar el túnel. En tu ejemplo (Imagen 6), el tráfico fluye de la red `10.0.1.0/24` a la `10.0.2.0/24`.    
+- **Protocol & Ports:** Al estar marcados como **All**, el túnel permite cualquier tipo de tráfico (TCP, UDP, ICMP) entre esas redes.
+
+### 2. Propuesta de Fase 2 (Phase 2 Proposal - Imagen 6)
+
+Es el conjunto de algoritmos para los datos del usuario.
+
+- **Encryption & Authentication:** En tu captura se usa **DES** y **MD5**. _Nota: Estos son algoritmos antiguos; en producción se suele preferir AES y SHA._
     
-    - _Ejemplo:_ Si tu oficina usa `192.168.1.0/24` y la sucursal `10.0.1.0/24`, esos son tus selectores.
-        
-- **Outcome:** Si los selectores no coinciden en ambos lados, el túnel puede subir (Fase 1 OK), pero el tráfico no pasará (Fase 2 fallida).
+- **Perfect Forward Secrecy (PFS):** Si se activa, obliga a generar claves nuevas e independientes de la Fase 1 para cada renegociación, aumentando la seguridad.
+    
+- **Key Lifetime:** Determina cada cuánto tiempo expira la **IPsec SA**. En tu captura está configurado en **43,200 segundos** (12 horas).
     
 
-|**Parámetro**|**Fase 1 (IKE SA)**|**Fase 2 (IPsec SA)**|
-|---|---|---|
-|**Objetivo**|Establecer canal de control seguro|Cifrar los datos del usuario|
-|**Identificación**|IP pública / ID local|Subredes internas (Selectores)|
-|**Cifrado**|Propuesta de Fase 1|Propuesta de Fase 2|
-|**Duración**|Larga (ej. 86400s)|Corta (ej. 43200s)|
+### **3. Funciones de Control (Imagen 6)**
+
+- **Enable Replay Detection:** Protege contra ataques de "replay", donde un atacante captura paquetes válidos y los reenvía para intentar engañar al receptor.
+    
+- **Auto-negotiate:** Si se activa, el FortiGate intentará levantar el túnel automáticamente en cuanto haya tráfico interesado, sin esperar a que el otro lado inicie.
+    
+
+---
+
+### Diferencia de Tiempos (Lifetime)
+
+> La **Fase 1 (IKE SA)** suele durar mucho más (ej. 86,400s / 24h) que la **Fase 2 (IPsec SA)** (ej. 43,200s / 12h). Esto asegura que las llaves que protegen tus datos cambien con mayor frecuencia que el canal de control.
+
+
+| **Parámetro**      | **Fase 1 (IKE SA)**                | **Fase 2 (IPsec SA)**          |
+| ------------------ | ---------------------------------- | ------------------------------ |
+| **Objetivo**       | Establecer canal de control seguro | Cifrar los datos del usuario   |
+| **Identificación** | IP pública / ID local              | Subredes internas (Selectores) |
+| **Cifrado**        | Propuesta de Fase 1                | Propuesta de Fase 2            |
+| **Duración**       | Larga (ej. 86400s)                 | Corta (ej. 43200s)             |
