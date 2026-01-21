@@ -31,6 +31,11 @@ para las dos fases es recomendable poner
 
 ## Configuración Custom de VPN IPsec en FortiGate
 
+> tener encuenta muy importante que esto debe ahcerse en ambos lados si tenemos un fortigate en cada Site... como en nuestro caso
+
+
+![[topologia.png]]
+
 Cuando seleccionas la opción **Custom**, el FortiGate te permite definir manualmente cada parámetro de las dos fases de IKE.
 
 ### 1. Configuración de Red y Gateway
