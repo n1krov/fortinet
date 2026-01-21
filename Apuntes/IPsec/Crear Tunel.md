@@ -70,9 +70,8 @@ Aquí defines el "idioma" de seguridad para la **IKE SA**. Ambos extremos deben 
 - **Encryption & Authentication:** Las parejas de algoritmos (ej. AES256 con SHA256).
     
 - **Diffie-Hellman (DH) Groups:** Determinan la fuerza de la clave generada para el intercambio. A números más altos (ej. 14, 19, 21), mayor seguridad matemática.
-    
+
 - **Key Lifetime:** Tiempo que dura la Fase 1 antes de renegociar las llaves.
-    
 
 ### 4. Phase 2 Selectors
 
