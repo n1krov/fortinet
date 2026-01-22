@@ -136,9 +136,11 @@ luego de crear el tunel no alcaza, eso es porque las vpn son de tipo **enrutadas
 ![[Captura de pantalla_20260122_092339.png]]
 
 
-tip muy importante de buena practica: a la hora de crear una static route para el tunel es recomendable crear una ruta estatica similar nada mas que se sube el Administrative Distance a un numero alto y la interfaz debe ser **Blackhole**
+tip muy importante de buena practica: a la hora de crear una static route para el tunel es recomendable crear una ruta estatica similar nada mas que se sube el Administrative Distance a un numero alto por si tenemos otra vpn y queremos que el blackhole no se meta en el medio y la interfaz debe ser **Blackhole**
 esto es para que si se cae el tunel le pegue directo al blackhole y no consuma recursos y genere trafico inncecesario
 
 ![[Captura de pantalla_20260122_092931.png]]
 
 en la imagen se puede ver al configuracion de las opciones
+
+POR ULTIMO FALTA UNA [[Policy Routes]] que permita el trafico
