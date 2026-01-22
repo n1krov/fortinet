@@ -113,7 +113,6 @@ Es el conjunto de algoritmos para los datos del usuario.
 - **Auto-negotiate:** Si se activa, el FortiGate intentará levantar el túnel automáticamente en cuanto haya tráfico interesado, sin esperar a que el otro lado inicie.
     
 
----
 
 ### Diferencia de Tiempos (Lifetime)
 
@@ -126,3 +125,20 @@ Es el conjunto de algoritmos para los datos del usuario.
 | **Identificación** | IP pública / ID local              | Subredes internas (Selectores) |
 | **Cifrado**        | Propuesta de Fase 1                | Propuesta de Fase 2            |
 | **Duración**       | Larga (ej. 86400s)                 | Corta (ej. 43200s)             |
+
+
+
+luego de crear el tunel no alcaza, eso es porque las vpn son de tipo **enrutadas** lo que quiere decir es que loq ue hace es crear la interfaz
+> necesitamos utilizar [[Rutas Estáticas]] hacia esa interfaz
+
+### Creacin de Ruta Estatica para conectar el Tunel
+
+![[Captura de pantalla_20260122_092339.png]]
+
+
+tip muy importante de buena practica: a la hora de crear una static route para el tunel es recomendable crear una ruta estatica similar nada mas que se sube el Administrative Distance a un numero alto y la interfaz debe ser **Blackhole**
+esto es para que si se cae el tunel le pegue directo al blackhole y no consuma recursos y genere trafico inncecesario
+
+![[Captura de pantalla_20260122_092931.png]]
+
+en la imagen se puede ver al configuracion de las opciones
