@@ -150,3 +150,7 @@ en resumen para crear un tunel, debes
 - crear tunel
 - ruta estatica para el tunel
 - firewall policy ida y vuelta o lo que necesites
+
+si tenes mas de una vpn o vpn de backup. lo ideal es trabajar con zonas y ahi agregas las 2 ips. 
+siempre es recomendable trabajar con objetos
+
