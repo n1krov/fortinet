@@ -131,7 +131,7 @@ Es el conjunto de algoritmos para los datos del usuario.
 luego de crear el tunel no alcaza, eso es porque las vpn son de tipo **enrutadas** lo que quiere decir es que loq ue hace es crear la interfaz
 > necesitamos utilizar [[Rutas Estáticas]] hacia esa interfaz
 
-### Creacin de Ruta Estatica para conectar el Tunel
+### Creación de Ruta Estatica para conectar el Tunel
 
 ![[Captura de pantalla_20260122_092339.png]]
 
@@ -144,3 +144,9 @@ esto es para que si se cae el tunel le pegue directo al blackhole y no consuma r
 en la imagen se puede ver al configuracion de las opciones
 
 POR ULTIMO FALTA UNA [[Policy Routes]] que permita el trafico
+
+
+en resumen para crear un tunel, debes 
+- crear tunel
+- ruta estatica para el tunel
+- firewall policy ida y vuelta o lo que necesites
