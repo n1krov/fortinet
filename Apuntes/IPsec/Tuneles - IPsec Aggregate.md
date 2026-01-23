@@ -30,5 +30,17 @@ en la parte de advanced poner en `Enabled` la opcion de `Aggregate member`
 
 > Importante: tener en cuenta que en las rutas estaticas las distancias deben ser ***IGUALES***
 
-Luego crear en VPN > IPsec  Tunnels
 
+Luego crear en VPN > IPsec  Tunnels > New ipsec aggregate
+
+> ademas en la ruta estatica agregar el destino y la interfaz debe ser el el conjunto de ipsec aggregate
+
+aqui un ejemplo de como se configura el tunel ipsec aggregate en ipsec tunels > new ipsec aggregate
+
+este nos permite balancear el conjunto de tuneles segun un algoritmo
+
+![[Pasted image 20260123122124.png]]
+
+> es por eso que cada tunel creado debe terner la opcion adicional de que puede ser agregado al aggergate member
+
+lo mismo en las sever policies. en vez de agregar un tunel como outgoing o incomming. agregar el ipsec aggregate.
