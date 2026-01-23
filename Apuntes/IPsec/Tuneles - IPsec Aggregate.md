@@ -28,3 +28,5 @@ La idea es crear los tuneles de la misma forma que hicimos en [[Crear Tunel]] co
 
 en la parte de advanced poner en `Enabled` la opcion de `Aggregate member`
 
+> Importante: tener en cuenta que en las rutas estaticas las distancias deben ser ***IGUALES***
+
