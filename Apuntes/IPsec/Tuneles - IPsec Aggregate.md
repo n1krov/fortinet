@@ -30,3 +30,5 @@ en la parte de advanced poner en `Enabled` la opcion de `Aggregate member`
 
 > Importante: tener en cuenta que en las rutas estaticas las distancias deben ser ***IGUALES***
 
+Luego crear en VPN > IPsec  Tunnels
+
