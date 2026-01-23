@@ -32,3 +32,4 @@ en la parte de advanced poner en `Enabled` la opcion de `Aggregate member`
 
 Luego crear en VPN > IPsec  Tunnels
 
+por ultimo fijarse que tiene 
