@@ -154,3 +154,7 @@ en resumen para crear un tunel, debes
 si tenes mas de una vpn o vpn de backup. lo ideal es trabajar con zonas y ahi agregas las 2 ips. 
 siempre es recomendable trabajar con objetos
 
+
+#### Balanceo [[ECMP - Balanceo]]
+
+- para hacer balanceo ECMP tenes que tener ya dos interfaces como minimo. y en las [[Rutas Estáticas]] modificar la distancia haciendo que sean iguales.
