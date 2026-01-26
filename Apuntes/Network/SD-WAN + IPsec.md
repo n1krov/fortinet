@@ -48,3 +48,4 @@ como siempre se usa
 
 ![[topologia.png]]
 
+casos como este que se quieran hacer uso de una zona sd-wan con tuen
