@@ -48,4 +48,5 @@ como siempre se usa
 
 ![[topologia.png]]
 
-casos como este que se quieran hacer uso de una zona sd-wan con tuen
+casos como este que se quieran hacer uso de una zona sd-wan con **tuneles** como elementos
+tener en cuenta que los tuneles no deben tener referencia. excepto la fase 2
