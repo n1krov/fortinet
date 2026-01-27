@@ -61,3 +61,13 @@ una vez creado los tuneles, seguimos con el sigiente paso
 
 
 paso 2: crear las SD-WAN
+creamos la sd-wan llamada `IPsec` este tendra como interfaces los dos tuneles de cada forti.
+
+en la zona A tendriamos que tener 2 sd_wan
+- la sd-wan de internet
+- sd-wan ipsec
+
+paso 3 rutas estaticas
+ponemos a donde queremos ir, en este caso la maquina `workstation` que tiene la red 10.0.2.0/24
+
+y aqqui la novedad de forti 
