@@ -70,4 +70,16 @@ en la zona A tendriamos que tener 2 sd_wan
 paso 3 rutas estaticas
 ponemos a donde queremos ir, en este caso la maquina `workstation` que tiene la red 10.0.2.0/24
 
-y aqqui la novedad de forti 
+y aqqui la novedad de forti 7: en la interfaz le podemos agragar la zona ipsec que armamos
+
+![[Captura de pantalla_20260127_084723.png]]
+
+ahora con esto creado sabe por donde navegar. pero faltaria crear las politicas
+
+paso 4: crear las Politicas de Firewall
+
+en este caso lo importante es el 
+incomming -> lan (puerto 4) que es donde esta conectado el dispositivo
+outgoing -> el sdwan `ipsec`
+
+no va NAT, ya que no va por internet directament
