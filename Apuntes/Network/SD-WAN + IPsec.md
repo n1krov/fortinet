@@ -50,3 +50,14 @@ como siempre se usa
 
 casos como este que se quieran hacer uso de una zona sd-wan con **tuneles** como elementos
 tener en cuenta que los tuneles no deben tener referencia. excepto la fase 2
+
+paso 1: Creamos los tuneles. en este caso son 4. como vimos en [[Crear Tunel]]
+- isp1 a
+- isp1 b
+- isp2 a
+- isp2 b
+
+una vez creado los tuneles, seguimos con el sigiente paso
+
+
+paso 2: crear las SD-WAN
