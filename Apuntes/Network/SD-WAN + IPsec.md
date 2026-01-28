@@ -92,7 +92,23 @@ necesitaremos algun testigo que nos valide eso. ninguna de las interfaces defiin
 
 
 #### Crear la interfaz de loopback
-en `network>interfaces` ponemos
+En `network>interfaces` creamos una nueva interfaz
+
+importante configurar en `type` > loopback
+y la ip la definis, debe ser /32 el cidr ej `172.20.0.1/31`
+
+podes habilitar el ping u otra cosa para testear
+
+
+> esto se debe hacer en ambos sitios
+
+
+#### Configuracion adicional para las VPNs
+
+para esto debemos en los tuneles IPsec definir una nueva fase 2 para cada tunel donde contemplemos a la loopback del site a para b y del b para el a
+
+
 
 
 para eso vamos a sd-wan > Performance SLAs
+
