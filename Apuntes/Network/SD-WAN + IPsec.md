@@ -107,6 +107,25 @@ podes habilitar el ping u otra cosa para testear
 
 para esto debemos en los tuneles IPsec definir una nueva fase 2 para cada tunel donde contemplemos a la loopback del site a para b y del b para el a
 
+![[Captura de pantalla_20260128_101148.png]]
+![[Captura de pantalla_20260128_101329.png]]
+>[!important] esto hay que hacerlo para todas las vpn que definimos, en este caso las 4
+
+ahora queda por definir las `static routes`
+
+aqui un ejemplo enla imagen ddesde el site B
+
+![[Captura de pantalla_20260128_101815.png]]
+
+
+##### Creando la Firewall policy par las loopback
+
+> aqui una imagen de ejemplo desde el site b hacia el a
+
+![[Captura de pantalla_20260128_102348.png]]
+
+como se puedever en laimagen el inocming interface es la loopback del site b que redirija el trafico haciael IPsec, que es el tunell
+luego hay que hacer un clone reverse para tener la vuelta, es decir. lo q venga de ipsec redirigir a la loopback
 
 
 
