@@ -88,4 +88,11 @@ no va NAT, ya que no va por internet directamente
 
 luego de la configuracion queda por darle uso a sd-wan haciendo que balancee de tal forma que vaya por el ipsec con la **menor latencia** posible entre esos tuneles definidos.
 
+necesitaremos algun testigo que nos valide eso. ninguna de las interfaces defiinidas nos sirve. Pero la que sirve es la loopback de cada uno para que vayan evaluandose si estan caidas pq si el forti deja de responder la `lo` estara caida
+
+
+#### Crear la interfaz de loopback
+en `network>interfaces` ponemos
+
+
 para eso vamos a sd-wan > Performance SLAs
