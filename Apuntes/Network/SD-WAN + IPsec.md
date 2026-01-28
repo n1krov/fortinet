@@ -82,4 +82,8 @@ en este caso lo importante es el
 incomming -> lan (puerto 4) que es donde esta conectado el dispositivo
 outgoing -> el sdwan `ipsec`
 
-no va NAT, ya que no va por internet directament
+no va NAT, ya que no va por internet directamente
+
+---
+
+luego de la configuracion queda por ver 
