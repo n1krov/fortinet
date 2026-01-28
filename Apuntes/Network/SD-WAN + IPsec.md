@@ -125,7 +125,11 @@ aqui un ejemplo enla imagen ddesde el site B
 ![[Captura de pantalla_20260128_102348.png]]
 
 como se puedever en laimagen el inocming interface es la loopback del site b que redirija el trafico haciael IPsec, que es el tunell
-luego hay que hacer un clone reverse para tener la vuelta, es decir. lo q venga de ipsec redirigir a la loopback
+luego hay que hacer un clone reverse para tener la vuelta, es decir. lo q venga de ipsec redirigir a la loopback del site b
+
+y luego hacer lo mismo desde el site A
+
+
 
 
 
