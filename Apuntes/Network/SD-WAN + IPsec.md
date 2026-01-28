@@ -86,4 +86,6 @@ no va NAT, ya que no va por internet directamente
 
 ---
 
-luego de la configuracion queda por ver 
+luego de la configuracion queda por darle uso a sd-wan haciendo que balancee de tal forma que vaya por el ipsec con la **menor latencia** posible entre esos tuneles definidos.
+
+para eso vamos a sd-wan > Performance SLAs
