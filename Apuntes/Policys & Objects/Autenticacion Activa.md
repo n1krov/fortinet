@@ -13,3 +13,7 @@ Aqui va el texto:
 
 esto sirve para poder crear politicas que permitan restringir la navegacion de internet o a ciertos sitios. y cuando un usuario quiera acceer a algo restringido deba iniciar sesion
 
+ir a User & Autentication > Create New
+1. poner local user
+2. establecemos usuario y password
+3. 
