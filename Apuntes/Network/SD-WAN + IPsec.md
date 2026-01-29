@@ -148,4 +148,4 @@ tener en cuenta que los participantes hay que ser especificos
 
 por ULTIMO queda la configuracion de SD-WAN RULES, esto es crucial ya que aqui determina la regla para ver el switch de miembros sd-wan respecto al que tenga mas baja latencia
 
-
+ir a sd-wan > SD-WAN rules > Create New 
