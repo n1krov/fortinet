@@ -131,3 +131,18 @@ y luego hacer lo mismo desde el site A
 
 
 problema: hay que realizar una config adicional, hay que [[SD-WAN - Agregar Source a los Miembros SD-WAN]] 
+
+
+---
+
+lo que queda como ultimo paso es armar el [[SD-WAN - Performance SLAs]]
+
+ir a sd-wan > performance SLAs > Create New y la configuracion se suele hacer mas o menos asi
+
+![[Captura de pantalla_20260129_083045.png]]
+
+tener en cuenta que los participantes hay que ser especificos
+
+> si se conectan con fortis en otra zona, deben hacer lo mismo en ambos lados
+
+
