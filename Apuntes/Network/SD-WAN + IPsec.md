@@ -130,8 +130,4 @@ luego hay que hacer un clone reverse para tener la vuelta, es decir. lo q venga 
 y luego hacer lo mismo desde el site A
 
 
-
-
-
-para eso vamos a sd-wan > Performance SLAs
-
+problema: hay que realizar una config adicional, hay que [[SD-WAN - Agregar Source a los Miembros SD-WAN]] 
