@@ -16,4 +16,10 @@ esto sirve para poder crear politicas que permitan restringir la navegacion de i
 ir a User & Autentication > Create New
 1. poner local user
 2. establecemos usuario y password
-3. 
+3. no vamos a tildar el two factor autentication
+4. ventana para añadir a un grupo ese usuario a crear
+
+luego editamos o establecemos una politica de firewall donde en source debemos agregar el usuario creado en su defecto. lo cual significa que la navegacion se permite solo por este usuario u otro objeto agregado si existe en la policy
+
+![[Captura de pantalla_20260130_090418.png]]
+
