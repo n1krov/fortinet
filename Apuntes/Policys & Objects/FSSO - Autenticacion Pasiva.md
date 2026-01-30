@@ -48,7 +48,8 @@ existen tambien 3 tipos de FSSO q forti soporta
 
 ### DC Agent Mode Process
 
-esta es la mas usada y la mas escalable
+esta es la mas usada y la mas escalable en empresas donde hay mas de un controlador de dominio
+tambien este modo, el collector agent controla los estados de las workstation, controla si estan prendidas, inactivas etc
 
 ![[Captura de pantalla_20260130_102551.png]]
 1. el usuario se autentica contra el DC de windows
@@ -91,4 +92,12 @@ el collector agent envia al forti
 
 
 ### Agentless Pollign Mode Process
+
 ![[Captura de pantalla_20260130_113314.png]]
+
+1. el forti efectua la extraccion al controlador de dominio DC yu recolecta eventos de login
+2. el usuario se autentica con el DC.
+	1. fortigate descubre el evento del login en la siguiente extraccion
+3. el usuario no necesita autenticarse
+	1. Fortigate ya sabe de quién es el tráfico que está recibiendo
+
