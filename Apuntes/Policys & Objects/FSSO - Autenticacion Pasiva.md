@@ -44,3 +44,12 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 Autenticacion pasiva con forti FSSO
 
+existen tambien 3 tipos de FSSO q forti soporta
+
+### DC Agent
+
+![[Captura de pantalla_20260130_102551.png]]
+1. el usuario se autentica contra el DC de windows
+2. el Agente DC ve el evento de autenticacion y redirige al collector agent
+3. el collector agent recive el evento del DC agente y redirige al fortigate
+4. El fortigate conoce el usuario por su ip, entonces el usuario no necesita autenticarse constantemente
