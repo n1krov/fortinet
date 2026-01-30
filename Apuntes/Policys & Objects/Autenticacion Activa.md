@@ -31,3 +31,10 @@ este es en el caso que cuentes conun servidor de dominio de usuarios. y desees a
 ir a 
 user & autentications > LDAP servers > create new
 
+![[Captura de pantalla_20260130_094204.png]]
+
+si le das a Browse te devuelve todo el arbol del active directory. Una vez conectado al dominio podemos crear el usuario pero esta vez con la opcion de "remote LDAP User"
+
+![[Captura de pantalla_20260130_094510.png]]
+
+luego buscamos el usuario y lo agregamos y le damos submit
