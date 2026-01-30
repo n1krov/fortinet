@@ -46,10 +46,25 @@ Autenticacion pasiva con forti FSSO
 
 existen tambien 3 tipos de FSSO q forti soporta
 
-### DC Agent
+### DC Agent Mode Process
 
 ![[Captura de pantalla_20260130_102551.png]]
 1. el usuario se autentica contra el DC de windows
 2. el Agente DC ve el evento de autenticacion y redirige al collector agent
 3. el collector agent recive el evento del DC agente y redirige al fortigate
 4. El fortigate conoce el usuario por su ip, entonces el usuario no necesita autenticarse constantemente
+
+el collector agent trabaja en el 8002 por UDP
+y el forti trabaja por el 8000 por TCP
+el collector agent envia al forti
+- nombre de usuario
+- nombre de host
+- Direccion IP
+- grupos de usuario
+
+
+### Collector Agent-Based Polling Mode Process
+
+Como se muestra en la imagen, 
+
+![[Captura de pantalla_20260130_103235.png]]
