@@ -48,11 +48,16 @@ existen tambien 3 tipos de FSSO q forti soporta
 
 ### DC Agent Mode Process
 
+esta es la mas usada y la mas escalable
+
 ![[Captura de pantalla_20260130_102551.png]]
 1. el usuario se autentica contra el DC de windows
 2. el Agente DC ve el evento de autenticacion y redirige al collector agent
 3. el collector agent recive el evento del DC agente y redirige al fortigate
 4. El fortigate conoce el usuario por su ip, entonces el usuario no necesita autenticarse constantemente
+
+> nota que este modo trabaja con DC AGENT y COLLECTOR AGENT generalmente en el mismo servidor
+
 
 el collector agent trabaja en el 8002 por UDP
 y el forti trabaja por el 8000 por TCP
@@ -68,3 +73,22 @@ el collector agent envia al forti
 Como se muestra en la imagen, 
 
 ![[Captura de pantalla_20260130_103235.png]]
+en este modo:
+1. el usuario se autentica con el DC (domain controller)
+2. el colector ahce la extraccion en el DC para recolectar eventos de login
+3. el colector luego redireccion a los logins al fortigate
+4. el usuario no necesita autenitcarse
+
+> nota que el dc agent, no esta instalado, esto es sin dc agent, en el servidor esta instalado solo el agente de collector
+
+el collector agent trabaja en el 445 por TCP
+y el forti trabaja por el 8000 por TCP
+el collector agent envia al forti
+- nombre de usuario
+- nombre de host
+- Direccion IP
+- grupos de usuario
+
+
+### Agentless Pollign Mode Process
+![[Captura de pantalla_20260130_113314.png]]
