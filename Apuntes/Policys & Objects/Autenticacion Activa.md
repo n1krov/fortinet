@@ -23,3 +23,11 @@ luego editamos o establecemos una politica de firewall donde en source debemos a
 
 ![[Captura de pantalla_20260130_090418.png]]
 
+
+#### Agregar el controlador de dominio al forti para los usuarios
+
+este es en el caso que cuentes conun servidor de dominio de usuarios. y desees agregarlos
+
+ir a 
+user & autentications > LDAP servers > create new
+
