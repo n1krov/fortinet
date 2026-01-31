@@ -42,64 +42,12 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 ---
 
-Autenticacion pasiva con forti FSSO
+ir a Security fabric > external connectors
+usaremos el fsso agent on windows ad
+nombre - su direccion ip - password que esta colocado en el software de configuracion
 
-existen tambien 3 tipos de FSSO q forti soporta
+![[Pasted image 20260131164551.png]]
 
-### DC Agent Mode Process
+## En las politicas de firewall
 
-esta es la mas usada y la mas escalable en empresas donde hay mas de un controlador de dominio
-tambien este modo, el collector agent controla los estados de las workstation, controla si estan prendidas, inactivas etc
-
-![[Captura de pantalla_20260130_102551.png]]
-1. el usuario se autentica contra el DC de windows
-2. el Agente DC ve el evento de autenticacion y redirige al collector agent
-3. el collector agent recive el evento del DC agente y redirige al fortigate
-4. El fortigate conoce el usuario por su ip, entonces el usuario no necesita autenticarse constantemente
-
-> nota que este modo trabaja con DC AGENT y COLLECTOR AGENT generalmente en el mismo servidor
-
-
-el collector agent trabaja en el 8002 por UDP
-y el forti trabaja por el 8000 por TCP
-el collector agent envia al forti
-- nombre de usuario
-- nombre de host
-- Direccion IP
-- grupos de usuario
-
-
-### Collector Agent-Based Polling Mode Process
-
-Como se muestra en la imagen, 
-
-![[Captura de pantalla_20260130_103235.png]]
-en este modo:
-1. el usuario se autentica con el DC (domain controller)
-2. el colector ahce la extraccion en el DC para recolectar eventos de login
-3. el colector luego redireccion a los logins al fortigate
-4. el usuario no necesita autenitcarse
-
-> nota que el dc agent, no esta instalado, esto es sin dc agent, en el servidor esta instalado solo el agente de collector
-
-el collector agent trabaja en el 445 por TCP
-y el forti trabaja por el 8000 por TCP
-el collector agent envia al forti
-- nombre de usuario
-- nombre de host
-- Direccion IP
-- grupos de usuario
-
-
-### Agentless Pollign Mode Process
-
-![[Captura de pantalla_20260130_113314.png]]
-
-1. el forti efectua la extraccion al controlador de dominio DC yu recolecta eventos de login
-2. el usuario se autentica con el DC.
-	1. fortigate descubre el evento del login en la siguiente extraccion
-3. el usuario no necesita autenticarse
-	1. Fortigate ya sabe de quién es el tráfico que está recibiendo
-
-
-Tambiene es importante ver [[FSSO - Agente]]
+en `source` puedes ya agregar los grupos del Active Directory que se configuro anteriormente con el Collector agent
