@@ -72,3 +72,14 @@ desde el dashboard puedes ver con `user&devices>show FSSO logons`
 | **DNS**              | Asegúrate de que las IPs se actualicen correctamente en el servidor DNS (Scavenging habilitado).                 |
 | **Firewall Interno** | Abrir puertos **TCP 139 y 445** desde la IP del Agente hacia toda la red de usuarios.                            |
 | **GPO (Políticas)**  | Podrías necesitar una política de grupo para habilitar el servicio "Remote Registry" si el polling básico falla. |
+
+
+### Comparativa DC agent mode vs Polling mode
+
+| **Característica**     | **DC Agent Mode**                                                                                                  | **Polling Mode**                                                                                 |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| **Instalación**        | **Compleja:** Se debe instalar un agente en cada Controlador de Dominio (DC) y requiere **reiniciar** el servidor. | **Fácil:** Se instala en un solo servidor (Collector Agent) y **no requiere reiniciar** los DCs. |
+| **Escalabilidad**      | **Alta:** Ideal para redes grandes con mucho tráfico de usuarios.                                                  | **Baja:** El Collector Agent puede saturarse si debe consultar demasiados DCs constantemente.    |
+| **Nivel de Confianza** | **Máximo:** Captura el 100% de los inicios de sesión en tiempo real.                                               | **Variable:** Puede perder registros (NetAPI) o tener retrasos (WinSecLog).                      |
+| **Uso de Recursos**    | Los agentes instalados comparten la carga de trabajo en los propios DCs.                                           | El Collector Agent utiliza sus propios recursos para procesar los datos.                         |
+| **Redundancia**        | Soporta configuración redundante.                                                                                  | Soporta configuración redundante.                                                                |
