@@ -1,6 +1,5 @@
 
 
-
 ![[Captura de pantalla_20260130_113314.png]]
 
 1. el forti efectua la extraccion al controlador de dominio DC yu recolecta eventos de login

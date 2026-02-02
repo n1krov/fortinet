@@ -46,11 +46,11 @@ Autenticacion pasiva con forti FSSO
 
 existen tambien 3 tipos de FSSO q forti soporta
 
-### [[FSSO - DC Agent Mode Process]]
+### [[FSSO Modo - DC Agent Mode Process]]
 
-### [[FSSO - Collector Agent-Based Polling Mode Process]]
+### [[FSSO Modo - Collector Agent-Based Polling Mode Process]]
 
-### [[FSSO - Agentless Pollign Mode Process]]
+### [[FSSO Modo - Agentless Pollign Mode Process]]
 
 
 Tambiene es importante ver como funcional al configuracion de [[FSSO - Agente]]
