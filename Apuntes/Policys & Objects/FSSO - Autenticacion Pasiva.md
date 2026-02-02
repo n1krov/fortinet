@@ -46,6 +46,9 @@ Autenticacion pasiva con forti FSSO
 
 existen tambien 3 tipos de FSSO q forti soporta
 
+>[!important] estos modos matchea por IP no por nombre de usuario. por lo que es importante si se trabaja desde una misma maquina tener cuidado con el DHCP en esa maquina y cerrar sesiones viejas desde el fortigate
+
+
 ### [[FSSO Modo - DC Agent Mode Process]]
 
 ### [[FSSO Modo - Collector Agent-Based Polling Mode Process]]
