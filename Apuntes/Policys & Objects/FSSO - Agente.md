@@ -92,4 +92,6 @@ Support NTLM authentication"**. Esto permite que, si el método pasivo (FSSO) fa
 
 
 
-## Seleccionar grupos del dominio que
+## Seleccionar grupos del dominio que el fortigate puede conocer
+
+eso esta en Set group filters, para filtrar simplemente es dar en avanced y seleccionar el grupo que el fortigate puede concocer
