@@ -7,3 +7,21 @@
 	1. fortigate descubre el evento del login en la siguiente extraccion
 3. el usuario no necesita autenticarse
 	1. Fortigate ya sabe de quién es el tráfico que está recibiendo
+
+
+----
+
+comenzamos configurando el forti esta vez con otro conector llamado
+
+poll active directory server
+
+
+en Security Fabric>external conectors
+
+
+aqui un ejemplo
+
+![[Pasted image 20260202163237.png]]
+
+cabe aclarar tambien que en users/goups permite filtrar por usuarios o grupos
+util para ver quien tiene acceso
