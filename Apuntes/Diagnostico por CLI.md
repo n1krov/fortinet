@@ -16,3 +16,14 @@ diagnose hardware deviceinfo nic <port_x>
 ```sh
 diagnose sys top
 ```
+
+### Matar un proceso
+
+```sh
+diagnose sys kill 11 <PID>
+```
+
+
+```
+diagnose debug
+```
