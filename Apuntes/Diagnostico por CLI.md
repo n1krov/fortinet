@@ -24,6 +24,15 @@ diagnose sys kill 11 <PID>
 ```
 
 
+### Caso de que los tuneles fallan
+
+por si fallan los tuneles o algo de IPsec, 
+
 ```
-diagnose debug
+diagnose debug disable
 ```
+
+```sh
+diagnose vpn
+```
+
