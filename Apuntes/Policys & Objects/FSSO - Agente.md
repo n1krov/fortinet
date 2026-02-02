@@ -89,3 +89,7 @@ Son los accesos rápidos para administrar el sistema:
 ### Un detalle importante:
 
 Support NTLM authentication"**. Esto permite que, si el método pasivo (FSSO) falla, el FortiGate pueda pedirle al navegador del usuario que se autentique mediante un desafío/respuesta de Windows.
+
+
+
+## Seleccionar grupos del dominio que
