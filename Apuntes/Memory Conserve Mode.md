@@ -21,6 +21,7 @@ El sistema maneja tres niveles basados en el porcentaje de RAM total utilizada:
 |**Red (Rojo)**|Es el punto de entrada. Aquí el FortiGate **entra en modo de conservación** y empieza a limitar funciones (como no permitir cambios de configuración).|**88%**|
 |**Extreme (Extremo)**|Es el nivel de pánico. El FortiGate **descarta todas las sesiones nuevas** para proteger el tráfico que ya está pasando.|**95%**|
 
+
 ## ¿Cómo se configura?
 
 Si necesitas ajustar estos valores (por ejemplo, si tu equipo entra en modo rojo muy seguido y quieres darle un poco más de margen), se hace desde la CLI con estos comandos que aparecen en tu imagen:
