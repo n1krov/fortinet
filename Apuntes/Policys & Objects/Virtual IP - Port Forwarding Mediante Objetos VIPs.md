@@ -1,7 +1,7 @@
 ---
 Tema: "[[policys&objects]]"
 ---
-
+>[!important] LOS PORT FORWARDING SE CREAN MEDIANTE VIPS
 ## DST [[NAT]] (VIP)
 
 esta imagen muestra el flujo de lo que pasa cuando nos queremos conectar a un servidor.
@@ -29,3 +29,11 @@ en Policy&objects>Virtual IPs > create new virtual IP
 > si tienes sdwan no te va a dejar poner el objeto sdwan como interface. debes poner una interfaz que sea integrante de una sdwan
 
 
+Una vez creada la VIp existen 2 opciones. crear la politica usando el objeto o sobre la VIP creada haciendo click derecho creamos la policy
+
+![[Captura de pantalla_20260203_091400.png]]
+
+cuando estamos exponiendo un servicio recordar que es mejor restringirlo. en este caso podriamos poner HTTP nomas ya que es un vip http
+
+
+recordar tambien que esto NO lleva NAT.
