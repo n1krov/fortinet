@@ -66,3 +66,34 @@ recordar que las rutas estaticas es para donde va a ir, en este caso por ejemplo
 continuamos con la firewall policy para ambos sitios a y b
 
 este es un ejemplo desde el site A saliendo a internet hacia el B, incluyendo la configuracion del [[IP Pools]]
+
+![[Captura de pantalla_20260203_104127.png]]
+
+nota que se utiliza nat para esta policy
+lo importante tambien es que aca el outgoing es el tunel que se configuro anteriormente
+
+la configuracion del nat es mediante el uso de ip pools ya que aqui usamos el modo fixed port range mapeando las ips ficticias con las subnets existentes uno a uno. Esto es porque el el tunel no tiene IP
+
+esta configuracino se hace lo mismo para el site A.
+
+---
+
+volviendo al site B: COMO SE CONFIGURA LA LLEGADA DE INTERNET
+
+aqui utilizaremos el concepto de [[Virtual IP - Port Forwarding Mediante Objetos VIPs]]
+
+y aqui se entiende el por que se hace esto de la red ficticia.
+
+cuando un paquete del site A llega al site B. llega con la ip enmascarada. 172.21.0.0/24, ES MAS, el site b NO tienen por que saber que tienen la misma subred. o puede ser que no saben que desde el site A se esta enmascarando y viene con la 172...
+
+por lo que esta es la razon. ademas que se enmascara para poder trabajar con las VIPs.
+
+>[!note] Las ips ficticias actuan como un puente entre ambos sites con la misma subnet
+
+aqui la politica del trafico que viene del SIte A
+
+![[Captura de pantalla_20260203_105513.png]]
+> no lleva NAT aqui
+> nota que aqui la configuracion critica esta enel Destination. que es una VIP llamada IPSEC
+
+La configuracion se ve de la siguiente manera
