@@ -53,3 +53,21 @@ sino en
 
 el sitio es http://support.fortinet.com
 en la opcion `support>firmware download`
+
+tambien puedes descargar desde el forti
+viendo en el apartado de FortiGUard Firmware puedes dver el latest o el all available
+
+En el caso de que tengan una version muy vieja, actualizar a la nueva version es recomendable utilizar el sitio de fortinet que te da un mapa guia de que actualizacion es aplicar, y no ir directo a la actualizacion mas reciente
+
+https://docs.fortinet.com/upgrade-tool/fortigate
+
+
+
+### actualizar por [[CLI]]
+
+con el comando
+```sh
+execute restore image <ftp/usb/url/sftp...> nombre_archivo ip_server usuario pass
+```
+
+
