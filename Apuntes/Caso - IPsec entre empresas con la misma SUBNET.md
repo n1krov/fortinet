@@ -97,3 +97,5 @@ aqui la politica del trafico que viene del SIte A
 > nota que aqui la configuracion critica esta enel Destination. que es una VIP llamada IPSEC
 
 La configuracion se ve de la siguiente manera
+
+![[Captura de pantalla_20260203_105723.png]]
