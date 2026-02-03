@@ -43,3 +43,13 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 ---
 
 como actualizar el forti os
+
+EN STATUS te aparecera si existe o no una actualizacion
+
+sino en 
+`system > firmware`
+
+![[Pasted image 20260202210413.png]]
+
+el sitio es http://support.fortinet.com
+en la opcion `support>firmware download`
