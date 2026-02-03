@@ -18,7 +18,8 @@ system > central SNAT
 o por [[CLI]]
 
 `config system settings`
-`set central-nat enable`
+`set central-nat enable` 
+para deshabilitarla es lo mismo, llegar a setting sy darle `set central-nat disable`
 
 aqui con esto, la configuracion del NAT se centraliza y la config pasa aconfigurarse como poilticas a parte. es muy similar a las firewall policys
 
@@ -39,3 +40,6 @@ esto se usa la opcion de `policy&object>DNAT & Virtual IPs`
 
 esto es en el forti del site A, por lo que en la imagen se puede ver que en external IP addres esta usando la IP publica del site A y la ip  privada es la del site A
 
+por lo que la policy se puede ver algo como esto
+
+![[Captura de pantalla_20260203_112735.png]]
