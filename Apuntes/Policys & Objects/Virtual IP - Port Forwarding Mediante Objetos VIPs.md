@@ -1,8 +1,8 @@
 ---
-Tema: "[[apuntes]]"
+Tema: "[[policys&objects]]"
 ---
 
-## DST NAT (VIP)
+## DST [[NAT]] (VIP)
 
 esta imagen muestra el flujo de lo que pasa cuando nos queremos conectar a un servidor.
 
@@ -14,5 +14,18 @@ cuando sale hacia internet sale con la ip publica. y cuando pasa por el forti es
 
 esto tambien es conocido como VIP en fortigate
 
-[[NAT]]
+
+
+---
+
+### Programar una VIP (Virtual IP)
+
+
+en Policy&objects>Virtual IPs > create new virtual IP
+
+![[Captura de pantalla_20260203_090602 1.png]]
+
+
+> si tienes sdwan no te va a dejar poner el objeto sdwan como interface. debes poner una interfaz que sea integrante de una sdwan
+
 
