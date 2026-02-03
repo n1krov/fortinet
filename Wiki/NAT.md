@@ -36,3 +36,10 @@ Desventajas
 
 - **Rendimiento**: Puede añadir latencia (lag).
 - **Compatibilidad**: Puede causar problemas con ciertos juegos o aplicaciones que requieren conexiones directas
+
+---
+
+## Funcionamiento del NAT (source NAT)
+
+![[Captura de pantalla_20260203_085314.png]]
+
