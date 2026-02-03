@@ -49,5 +49,7 @@ en
 
 > **Policies & Objects > Traffic Shaping**
 
-estan las pestañas | traffic shappers | traffic shaping policies | traffic shaping profiles |
+estan las pestañas | traffic shapers | traffic shaping policies | traffic shaping profiles |
 
+
+crear traffic shaper
