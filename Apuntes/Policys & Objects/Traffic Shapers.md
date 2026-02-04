@@ -53,3 +53,7 @@ estan las pestañas | traffic shapers | traffic shaping policies | traffic shapi
 
 
 crear traffic shaper
+en el menu traffic shapers > aqui se crea el **perfil** aqui se establece el trafico garantizado, el maximoe etc para despues aplicarle politicas
+
+![[Captura de pantalla_20260204_083903.png]]
+
