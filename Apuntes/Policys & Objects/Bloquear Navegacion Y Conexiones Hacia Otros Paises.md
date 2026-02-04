@@ -50,5 +50,8 @@ si tienes muchos paiese puedes crear un GRUPO para agrupar los paises *en Policy
 luego lo importante
 crear la policy en ***firewall policy***
 
+![[Captura de pantalla_20260204_102855.png]]
+nota que el source es el host. ej una camara y el destino es el objeto en si (paises bloqueados) y la action fue DENY
 
+> muy importante ponerlo antes de todo a la policy
 
