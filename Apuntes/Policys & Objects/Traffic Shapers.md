@@ -70,6 +70,7 @@ generalmente esta deshabilitado esa opcion ya que limitas las sesiones de conexi
 ![[Captura de pantalla_20260204_091846.png]]
 
 > en la politica solo habilitar la opcion para habilitar el peer ip
+
 ## Creacion de Traffic shaping POLICY
 
 
