@@ -154,3 +154,24 @@ Este es un comando de diagnóstico, no de configuración.
 
 log & report > forward traffic
 
+La sección de **Forward Traffic** es el centro de monitoreo principal del FortiGate. Aquí ves en tiempo real (o histórico) todo el tráfico que atraviesa el firewall desde una interfaz de origen hacia una de destino.
+
+**1. Información de Flujo (Columnas Principales)**
+- **Source / Destination:** Quién se comunica con quién. Puedes ver tanto direcciones IP como nombres de usuario (ej. `test user`) y países de destino mediante banderas.
+- **Application Name:** Identifica qué aplicación está usando el usuario (ej. `YouTube_Video.Play`, `Dropbox_File.Download`, `BitTorrent`).
+- **Result:** Indica si el tráfico fue permitido (check verde) o denegado (círculo rojo).
+- **Policy ID:** Muestra exactamente qué regla de firewall permitió o bloqueó ese tráfico. Es vital para troubleshooting.
+
+**2. Análisis de Seguridad (Panel Derecho)**
+Cuando seleccionas un log (como el que tienes resaltado en amarillo), el panel de la derecha te da el "peritaje" detallado:
+- **Security Action:** Explica por qué se bloqueó algo. En tu imagen vemos un `Deny: UTM Blocked`.
+- **Application Control:** Muestra la categoría y el nivel de riesgo de la aplicación detectada.
+- **Sent/Received Bytes:** El volumen de datos transferidos en esa sesión específica.
+
+**3. Tipos de Bloqueos Visibles**
+En tu pantalla se aprecian tres tipos de acciones comunes:
+- **UTM Blocked:** El tráfico fue denegado por un perfil de seguridad (como Web Filter o Application Control).
+- **Policy Violation:** El tráfico no cumplió con los requisitos de la política de firewall (regla de denegación explícita).
+- **Resultados Aceptados:** Tráfico legítimo que fluye normalmente consumiendo ancho de banda.
+
+> **Forward Traffic** registra el tráfico "de paso" por el equipo. Es la herramienta principal para verificar si una política de firewall o un perfil de seguridad (UTM) está actuando correctamente sobre los usuarios.
