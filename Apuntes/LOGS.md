@@ -182,4 +182,37 @@ En tu pantalla se aprecian tres tipos de acciones comunes:
 
 LOGS sobre las POLICYs
 
-en FIREWALL POLICY cuando se quiere registrar un logueo
+en FIREWALL POLICY cuando se quiere registrar un logueo, especificamente aqui
+
+![[Captura de pantalla_20260204_115725.png]]
+**1. Log Allowed Traffic (El "Qué")**
+Controla qué sesiones permitidas generan un registro:
+- **Security Events:** Solo registra el tráfico que activa un **Perfil de Seguridad** (UTM) como Antivirus o Web Filter. Es la opción más eficiente para no llenar el disco innecesariamente.
+- **All Sessions:** Registra **todas** las conexiones, sin excepción. Útil para auditorías completas o resolver problemas de conectividad (troubleshooting), pero consume mucho espacio.
+**2. Opciones Adicionales (El "Cuándo" y "Cómo")**
+- **Generate Logs when Session Starts:** Por defecto, FortiGate genera el log al finalizar la sesión (para calcular el total de bytes). Si activas esto, genera un log extra al inicio para monitoreo en tiempo real.
+- **Capture Packets:** Guarda el archivo real del tráfico (.pcap). Solo se usa para análisis técnico profundo o forense, ya que tiene un alto impacto en el rendimiento.
+
+
+### Ver logs de una sola politica
+> [!important] en la politica puedes hacer click derecho en "show matching logs" y nos lleva a los logs en forward traffic mostrando solo los logs de esa politica
+
+## Hacer backup de Logs por CLI
+
+por ftp
+`execute backup disk alllogs ftp ip_server_ftp user pass`
+
+
+
+---
+
+# Reportes
+por ultimo es una feature que viene deshabilitada
+
+esto lo habilitamos en system > Feature visibility > local reports
+
+se puede generar manualmente o programar el tiempo
+
+
+
+
