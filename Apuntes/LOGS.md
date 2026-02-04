@@ -55,3 +55,102 @@ para cambiar alguno por ej
 `set maximum-log-age 3`
 
 
+en Log & report > Log settings estan estas configuraciones
+
+Aquí tienes el desglose de ambas capturas para que las añadas a tus apuntes. La primera es la configuración del **disco local** por línea de comandos y la segunda es la configuración de **almacenamiento remoto** desde la interfaz gráfica.
+
+### **Configuración de Log Remoto y GUI (Web)**
+
+Esta sección gestiona el envío de logs a servidores externos y preferencias de visualización.
+
+- **Remote Logging and Archiving**:
+    - **Send logs to FortiAnalyzer/FortiManager**: Está en `Disabled`. Esto significa que el equipo no está enviando datos a una unidad de gestión centralizada de Fortinet.
+    - **Send logs to syslog**: Desactivado. No se están enviando logs a servidores de terceros (como un SIEM o servidor Linux).
+- **Log Settings**:
+    - **Event Logging**: Configurado en `All`, registrando todos los eventos del sistema (login, cambios de configuración, túneles VPN, etc.).
+    - **Local Traffic Log**: Configurado como `Customize`. Permite elegir específicamente qué tráfico de la red registrar (Permitido, Denegado, etc.).
+- **GUI Preferences**:    
+    - **Resolve Hostnames/Unknown Applications**: Activados. El FortiGate intentará mostrar nombres de dominio y aplicaciones conocidos en lugar de solo direcciones IP y puertos en los reportes.
+
+##### **Diferencia Clave para tus notas:**
+
+> Mientras que el **disco local** (Captura 1) es útil para revisiones rápidas, el **almacenamiento remoto** (Captura 2) es esencial para el cumplimiento legal y el análisis histórico a largo plazo, ya que el disco local tiene capacidad limitada y termina sobrescribiendo datos.
+
+
+
+ **Comandos Esenciales de Logging en FortiGate**
+
+**1. FortiAnalyzer (Logs Remotos)**
+
+Para configurar o verificar el envío de datos al recolector central de Fortinet.
+
+- `config log fortianalyzer setting`: Entra al menú de configuración para definir la IP del FortiAnalyzer y el estado del envío.
+    
+- `set status enable`: Activa el envío de logs.
+    
+- `set server <IP_del_Analyzer>`: Define el destino.
+    
+- `get`: Dentro del menú, muestra la configuración actual (IP, estado de conexión, serial del Analyzer).
+    
+
+ **2. Syslog (Servidores de Terceros)**
+
+Si utilizas un servidor Linux o un SIEM externo.
+
+- `config log syslogd setting`: Accede a la configuración del demonio de syslog.
+    
+- `set status enable`: Habilita el servicio.
+    
+- `set server <IP_Syslog>`: Especifica la dirección del servidor remoto.
+    
+- `set mode {udp | legacy-reliable}`: Define el protocolo de transporte (UDP es el estándar).
+    
+
+ **3. Event Filter (Filtro de Eventos)**
+
+Sirve para decidir **qué tipo** de eventos del sistema se guardan y cuáles se ignoran para no saturar el disco.
+
+- `config log eventfilter`: Entra al menú de filtros.
+    
+- `show`: Muestra qué categorías de eventos están activadas (ej. `system`, `vpn`, `user`, `router`).
+    
+- `set <categoría> {enable | disable}`: Permite activar o desactivar eventos específicos. Por ejemplo, si no usas VPN, puedes desactivar esos logs para ahorrar espacio.
+    
+
+ **4. Config Log Settings (Configuración General)**
+
+Controla el comportamiento global de los logs en el equipo.
+
+- `config log setting`: Menú principal de ajustes.
+    
+- `show`: Muestra configuraciones como el `log-location` (disco, memoria o remoto) y si el registro de tráfico local está activo.
+    
+
+**Privacidad y Diagnóstico**
+
+**5. User-Anonymize (Anonimización de Datos)**
+
+Se utiliza cuando, por normativas de privacidad (como GDPR), **no se quiere registrar información sensible** del usuario.
+
+- **Comando:** `set user-anonymize enable` (dentro de `config log setting`).
+    
+- **¿Para qué sirve?:** Reemplaza el nombre de usuario o datos identificativos en los logs por un valor genérico o hash, permitiendo ver el tráfico pero protegiendo la identidad del individuo.
+    
+
+**6. Diagnose Sys Logdisk Usage (Estado del Disco)**
+
+Este es un comando de diagnóstico, no de configuración.
+
+- **Comando:** `diagnose sys logdisk usage`
+    
+- **¿Para qué sirve?:** 1. Muestra el **espacio total** del disco duro dedicado a logs.
+    2. Indica cuánto espacio hay **disponible**.
+    3. Desglosa cuánto están ocupando los distintos tipos de logs (Traffic, Event, UTM).
+    4. Es vital para saber si el umbral de advertencia (threshold) de tus capturas anteriores está cerca de activarse.
+`diagnose log test`
+
+
+----
+
+log & report > forward traffic
+
