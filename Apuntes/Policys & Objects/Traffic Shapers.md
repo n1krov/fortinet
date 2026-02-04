@@ -81,3 +81,6 @@ ahi explico la imagen segun su item
 | **12**   | **Assign shaping class ID**    | **Clasificación de Prioridad:** Etiqueta el tráfico con un ID para que el FortiGate sepa qué tráfico es prioritario sobre otro en caso de congestión severa.          |
 
 
+para aplicar a la descarga usas el reverse shaper aplicando el perfil de **traffic shaper**
+para la subida el **shared shaper**
+

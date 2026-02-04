@@ -133,7 +133,7 @@ FortiGate reserva **4 bytes** en la trama para manejar VLAN tags según el está
                               │
                        ┌──────┴──────┐
                        │ TPID │ TCI  │
-                       │ 0x8100│12bits│
+                       │0x8100│12bits│
                        └─────────────┘
                               VID (VLAN ID)
 ```
