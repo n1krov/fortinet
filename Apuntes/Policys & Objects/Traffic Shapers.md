@@ -52,13 +52,25 @@ en
 estan las pestañas | traffic shapers | traffic shaping policies | traffic shaping profiles |
 
 
-### crear traffic shaper (shared o compartido)
+## crear traffic shaper 
+
+#### (shared o compartido)
 
 en el menu traffic shapers > aqui se crea el **perfil** aqui se establece el trafico garantizado, el maximoe etc para despues aplicarle politicas
 
 ![[Captura de pantalla_20260204_083903.png]]
 
-### Creacion de Traffic shaping POLICY
+
+#### Peer IP
+
+aqui tienes lo importante que es el maximo ancho de banda y la concurrencia de conexiones.
+
+generalmente esta deshabilitado esa opcion ya que limitas las sesiones de conexion y eso puede influir en la navegacion.
+
+![[Captura de pantalla_20260204_091846.png]]
+
+> en la politica solo habilitar la opcion para habilitar el peer ip
+## Creacion de Traffic shaping POLICY
 
 
 ![[Captura de pantalla_20260204_084607.png]]
