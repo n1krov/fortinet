@@ -175,3 +175,11 @@ En tu pantalla se aprecian tres tipos de acciones comunes:
 - **Resultados Aceptados:** Tráfico legítimo que fluye normalmente consumiendo ancho de banda.
 
 > **Forward Traffic** registra el tráfico "de paso" por el equipo. Es la herramienta principal para verificar si una política de firewall o un perfil de seguridad (UTM) está actuando correctamente sobre los usuarios.
+
+
+
+---
+
+LOGS sobre las POLICYs
+
+en FIREWALL POLICY cuando se quiere registrar un logueo
