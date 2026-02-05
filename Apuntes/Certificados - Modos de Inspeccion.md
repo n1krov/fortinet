@@ -46,3 +46,39 @@ Este es un modo de inspección más ligero que no descifra el contenido del trá
 
 ![[Captura de pantalla_20260205_104424.png]]
 
+
+
+#### Full SSL Inspection
+
+![[Captura de pantalla_20260205_110039.png]]
+
+Esta última imagen explica el concepto de **Full SSL Inspection** (también conocido como _Deep SSL Inspection_), que es el nivel más alto de seguridad para el tráfico cifrado.
+
+
+ **Full SSL Inspection en Tráfico Saliente**
+
+A diferencia de la inspección de certificados básica, el modo **Full Inspection** permite al FortiGate "abrir" el tráfico cifrado para inspeccionar su contenido en busca de virus o filtraciones de datos.
+
+**¿Cómo funciona el proceso? (Pasos 1-5)**
+
+1. **Interceptación:** El FortiGate actúa como un intermediario (Man-in-the-Middle) interceptando la solicitud HTTPS del usuario hacia internet.
+    
+2. **Validación:** El firewall se conecta al servidor web real (ej. `www.ex.ca`) y recibe su certificado original.
+    
+3. **Suplantación Segura:** El FortiGate genera un nuevo certificado "falso" que tiene el mismo nombre que el sitio original, pero firmado por la **CA (Autoridad de Certificación) del propio FortiGate**.
+    
+4. **Entrega al Cliente:** El FortiGate envía este certificado generado al navegador del usuario. El navegador es "engañado" pensando que se ha conectado directamente al servidor web, siempre y cuando confíe en la CA del FortiGate.
+    
+5. **Doble Túnel SSL:** Se establecen dos conexiones cifradas independientes: una entre el navegador y el FortiGate, y otra entre el FortiGate y el servidor web.
+    
+
+**Ventajas y Requisitos Críticos**
+
+- **Visibilidad Total:** Al descifrar el tráfico en el medio (paso 5), el FortiGate puede aplicar Antivirus, IPS y control de aplicaciones dentro del contenido que antes estaba oculto.
+    
+- **Requisito de Confianza:** Para que esto funcione sin alertas de seguridad constantes en las computadoras, es **obligatorio instalar el certificado CA del FortiGate** en el almacén de certificados de todos los dispositivos de la red.
+> paraa q fucnione se debe descargar el certificado e instalar en los navegadores correspondientes
+
+- **Protección contra Malware:** Es el único método capaz de detectar virus que viajan dentro de sesiones HTTPS.
+
+
