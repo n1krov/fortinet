@@ -81,4 +81,51 @@ A diferencia de la inspección de certificados básica, el modo **Full Inspectio
 
 - **Protección contra Malware:** Es el único método capaz de detectar virus que viajan dentro de sesiones HTTPS.
 
+### Full SSL Inspection on Inbount Traffic
+
+![[Captura de pantalla_20260205_110935.png]]
+
+
+Esta última captura introduce el concepto de **Full SSL Inspection para Tráfico Entrante (Inbound Traffic)**, que se utiliza específicamente para proteger servidores que tú administras (como un servidor web interno publicado a Internet).
+
+A diferencia del tráfico saliente (donde proteges a tus usuarios), la inspección entrante protege tus recursos internos de ataques que vienen desde Internet ocultos en tráfico HTTPS.
+
+### **¿Cómo funciona el proceso?**
+
+Cuando un usuario externo (Alice) intenta conectarse a tu servidor protegido:
+
+- **División de la conexión:** FortiGate actúa como un proxy transparente, terminando la conexión SSL del cliente y estableciendo una nueva hacia el servidor real.
+    
+- **Uso del Certificado Real:** Para que esto funcione, debes instalar en el FortiGate el **certificado del servidor, su clave privada y la cadena de certificados**.
+    
+- **Suplantación Legítima:** El FortiGate presenta el certificado firmado al usuario en nombre del servidor. Como el FortiGate posee la clave, puede descifrar el tráfico, inspeccionarlo y volverlo a cifrar antes de enviarlo al servidor interno.
+    
+
+### **Configuración en la GUI (Security Profiles > SSL/SSH Inspection)**
+
+- **Enable SSL inspection of:** Se debe seleccionar la opción **Protecting SSL Server**.
+    
+- **Server Certificate:** Aquí seleccionas el certificado específico del servidor que has importado previamente (ej. `Cert_Webserver`).
+
+| **Modo**                       | **Dirección** | **Objetivo Principal**                                    | **Requisito Clave**                                                 |
+| ------------------------------ | ------------- | --------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Certificate Inspection**     | Saliente      | Filtrado web básico por nombre de dominio.                | Ninguno (muy fácil de implementar).                                 |
+| **Full Inspection (Outbound)** | Saliente      | Protección total contra malware para usuarios internos.   | Instalar la **CA del FortiGate** en todos los PCs.                  |
+| **Full Inspection (Inbound)**  | Entrante      | Protección de servidores propios contra ataques externos. | Importar **Certificado y Clave Privada** del servidor al FortiGate. |
+
+
+La configuracion esta en el `FIREWALL POLICY` si editas una poiltica en  `security Profiles`
+
+![[Captura de pantalla_20260205_111519.png]]
+
+
+DONDE SE PROGRAMA ESTOS PERFILES??
+
+ir a `security Profiles>SSL/SSH inspection`  
+hay perfiles por defecto, pero puedes crear uno y tienes la configuracion importante en la sig imagen 
+
+![[Captura de pantalla_20260205_111901.png]]
+
+> nota qeu enable ssl inspection of > multiple clients connections to multiple servers es justo para ***Full SSL Inspection on Inbount Traffic***
+
 
