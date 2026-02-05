@@ -30,3 +30,19 @@ Aqui te va el texto:
 ---
 
 ### No ssl inspection
+
+### **1. El problema: No SSL Inspection**
+
+- **Oculto por cifrado:** Sin inspección, los virus y amenazas pueden pasar a través de las defensas de la red porque están "disfrazados" por el cifrado SSL/TLS.
+
+- **Vulnerabilidad:** A menos que se habilite la inspección completa (Full SSL Inspection), el firewall no puede "ver" dentro del paquete cifrado para buscar malware.    
+
+### **2. ¿Qué es SSL Certificate Inspection?**
+
+Este es un modo de inspección más ligero que no descifra el contenido del tráfico, sino que analiza la "identidad" de la conexión.
+
+- **Uso de SNI:** FortiGate utiliza el **Server Name Indication (SNI)** para identificar el nombre del servidor (hostname) al comienzo del saludo SSL (handshake).    
+- **Alternativas:** Si no hay SNI disponible, el equipo revisa los campos del certificado, como el **Subject** y el **Subject Alternative Name (SAN)** para saber a qué sitio se intenta acceder.
+
+![[Captura de pantalla_20260205_104424.png]]
+
