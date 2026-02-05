@@ -126,6 +126,28 @@ hay perfiles por defecto, pero puedes crear uno y tienes la configuracion import
 
 ![[Captura de pantalla_20260205_111901.png]]
 
-> nota qeu enable ssl inspection of > multiple clients connections to multiple servers es justo para ***Full SSL Inspection on Inbount Traffic***
+> nota qeu enable ssl inspection of > multiple clients connections to multiple servers es justo para *proteger a los usuarios de nuestra red* este no puede ver el payload
 
+si queremos el caso de Full SSL Inspection on Inbount Traffic, tenemos que habilittar el ***protecting SSL Server***
 
+**1. SSL Inspection Options (El "Qué" proteger)**
+
+- **Enable SSL inspection of:** Define el escenario de uso.
+    - **Multiple Clients Connecting to Multiple Servers:** Es el modo para **tráfico saliente** (tus usuarios navegando a Internet).
+    - **Protecting SSL Server:** Es el modo para **tráfico entrante** (usuarios externos accediendo a un servidor web que tú administras).
+- **Inspection Method:**
+    - **SSL Certificate Inspection:** Solo lee la cabecera del paquete (SNI) para saber a qué dominio va el usuario. No descifra el contenido.
+    - **Full SSL Inspection:** Descifra todo el tráfico para buscar malware, virus o fugas de datos antes de volver a cifrarlo.
+
+**2. Configuración de Certificados (El "Cómo" descifrar)**
+
+- **CA Certificate:** Aquí seleccionas el certificado que el FortiGate usará para firmar los certificados "suplentes" en tiempo real (por defecto `Fortinet_CA_SSL`).
+- **Untrusted SSL certificates:** Define **qué hacer si el sitio web al que va el usuario tiene un certificado inválido o expirado**. Lo ideal es dejarlo en **Block** para mantener la seguridad.
+- **Server certificate SNI check:** Verifica que el nombre del servidor en el certificado coincida con el SNI de la conexión. **Ayuda a prevenir ataques de suplantación.**
+
+**3. Protocol Port Mapping (El "Dónde" buscar)**
+
+Esta sección le dice al FortiGate en qué puertos debe intentar descifrar tráfico.
+
+- **HTTPS (443):** Navegación web segura.
+- **SMTPS (465), POP3S (995), IMAPS (993):** Protocolos de correo electrónico cifrados. Si activas estos, el Antivirus del FortiGate podrá escanear los archivos adjuntos de los correos que envían o reciben tus usuarios.
