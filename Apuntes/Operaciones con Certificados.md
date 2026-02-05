@@ -57,3 +57,8 @@ en System > certificates > create certificate
 
 ahi puedes crear con la firma de forti un certificado, importar un nuevo certificado con el fortmato pkcs, o de manera convencional
 
+
+> en firewall policy hay una opcion que se usa mucho que es SSL Inspection
+
+### Modos de Inspeccion
+
