@@ -16,3 +16,8 @@ es una configuracion LOCAL en cada POLICY
 flow based es el mas ligero y el qeu consume menos recursos, analiza el trafico en medida que atraviesa la policy sin actuar de proxy. esto puede gnerear falso positivo
 
 el modo proxy es todo lo contrario.
+
+
+#### Flow Based
+
+![[IPS_engine-flowmode.png]]
