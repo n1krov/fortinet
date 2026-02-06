@@ -79,3 +79,49 @@ Son ataques dirigidos a aprovechar una vulnerabilidad específica y conocida en 
 
 
 >[!note] Recordá que el motor IPS es el "corazón" que también hace funcionar al **Application Control**. Mientras que el Application Control usa las firmas para identificar la app, el IPS las usa para identificar si esa app está intentando explotar una vulnerabilidad.
+
+
+
+## **Funcionamiento del IPS en Fortinet**
+
+El IPS es un sistema de seguridad que monitorea el tráfico de red de forma constante para identificar y bloquear amenazas. Se caracteriza por trabajar principalmente en **modo de inspección basado en flujo (flow-based)** para garantizar la velocidad.
+
+### **1. Capacidades de Detección y Bloqueo**
+
+El motor IPS está diseñado para detectar dos tipos principales de eventos maliciosos:
+
+- **Exploits conocidos:** Ataques específicos que coinciden con patrones guardados en una base de datos de firmas.
+    
+- **Anomalías de protocolo:** Errores en la estructura de los paquetes de red o comportamientos que se desvían de los estándares establecidos.
+    
+
+### **2. Componentes del IPS**
+
+Para realizar su trabajo, el sistema utiliza tres elementos clave:
+
+- **Bases de datos de firmas IPS:** Repositorio actualizado con los patrones de ataques conocidos.
+    
+- **Decodificadores de protocolo:** Analizan el tráfico para entender qué protocolo se está usando y asegurar que cumpla con sus reglas.
+    
+- **Motor IPS (El núcleo):** Es el procesador central que coordina otros servicios de seguridad cuando trabajan en modo "flow-based".
+    
+
+### **3. Servicios que dependen del motor IPS**
+
+Cuando el FortiGate está configurado en modo flujo, el motor IPS se encarga de ejecutar los siguientes perfiles de seguridad:
+
+- **Application Control:** Identificación de aplicaciones.
+    
+- **Antivirus (flow based):** Escaneo de malware al vuelo.
+    
+- **Web filter (flow based):** Filtrado de sitios web.
+    
+- **Email filter (flow based):** Filtrado de correos electrónicos.
+    
+- **DLP (Data Leak Prevention):** Prevención de fuga de datos (específicamente cuando se usa en modo sniffer de un solo brazo).
+
+---
+
+
+en security profiles > create new
+
