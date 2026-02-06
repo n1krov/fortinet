@@ -33,6 +33,8 @@ Cuando te pase un texto de un concepto, transformalo en una **nota wiki estructu
 
 El sistema de prevención de intrusiones no solo busca virus, sino que analiza comportamientos y patrones de tráfico para identificar ataques activos.
 
+>[!important] Fortinet recomiendo aplicar ips a politicas que sean de salida a internet a los servidores o al reves, no de red interna a otra red interna
+
 ### **1. Anomalías (Anomaly)**
 
 Se refieren a comportamientos del tráfico que se desvían de lo normal o esperado.
