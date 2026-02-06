@@ -125,3 +125,39 @@ Cuando el FortiGate está configurado en modo flujo, el motor IPS se encarga de 
 
 en security profiles > create new
 
+Para crear y configurar un **IPS Sensor** (Sistema de Prevención de Intrusiones) en FortiGate, debés definir reglas específicas que identifiquen y bloqueen tanto exploits conocidos como comportamientos anómalos.
+
+### **1. Configuración General del Sensor**
+
+Al iniciar un **New IPS Sensor**, definís el comportamiento base:
+
+- **Block malicious URLs:** Al activar este switch, el motor IPS utiliza su base de datos para bloquear automáticamente el acceso a dominios conocidos por alojar malware o ser parte de redes de comando y control (C2).
+    
+
+### **2. IPS Signatures and Filters (El núcleo del sensor)**
+
+Esta sección es donde seleccionás qué ataques específicos querés frenar.
+
+- **Exploits:** Mediante el botón `Create New`, podés agregar firmas individuales que detectan ataques confirmados (como inyecciones SQL o desbordamientos de búfer) comparando el tráfico contra patrones conocidos.
+    
+- **Filtros:** En lugar de elegir una por una, podés crear filtros basados en:
+    
+    - **Severidad:** Crítica, alta, media, etc.
+        
+    - **Target:** Servidor o cliente.
+        
+    - **OS:** Windows, Linux, etc.
+        
+- **Action:** Podés definir si el IPS debe simplemente monitorear el evento o bloquearlo activamente.
+    
+
+### **3. Botnet C&C (Comando y Control)**
+
+Esta función es vital para detectar si algún equipo de tu red interna ya ha sido comprometido.
+
+- **Scan Outgoing Connections to Botnet Sites:** Analiza las conexiones que salen de tu red hacia internet.
+    
+- **Disable / Block / Monitor:** * **Block:** Corta la comunicación si un dispositivo interno intenta hablar con un servidor de una botnet.
+    
+    - **Monitor:** Permite la conexión pero genera un log de alerta para que sepas qué equipo está infectado.
+        
