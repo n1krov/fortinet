@@ -49,6 +49,10 @@ El control de aplicaciones permite al FortiGate identificar y tomar acciones (pe
 > El **Application Control** es una pieza clave del motor de "paso único" (Single-Pass) del FortiGate. Mientras el tráfico fluye, el motor IPS lo compara simultáneamente con firmas de aplicaciones para decidir su destino, garantizando visibilidad total sobre lo que realmente hacen los usuarios en la red.
 
 
+
+>[!important] cuando se crea estos perfiles. luego deben aplicarse en la politica. ya que esta seccion es un lugar donde se configuran y almacenan PERFILES de application control
+![[Captura de pantalla_20260206_101048.png]]
+
 esto quizas no es relevante para arquitecturas como cliente-servidor.
 pero si es relevante cuando se analiza trafico de redes p2p
 
@@ -138,3 +142,5 @@ Estas opciones actúan como filtros globales sobre el comportamiento de las apli
 
 - **¿Qué hace?:** Si el FortiGate bloquea una aplicación web (ej. Facebook), intentará mostrarle al usuario una página de reemplazo explicando el motivo del bloqueo.
 - **Nota:** Esto solo funciona si el tráfico es HTTP o si hay inspección SSL activa para tráfico HTTPS.
+
+
