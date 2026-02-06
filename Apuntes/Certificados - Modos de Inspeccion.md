@@ -154,5 +154,6 @@ Esta sección le dice al FortiGate en qué puertos debe intentar descifrar tráf
 - **SMTPS (465), POP3S (995), IMAPS (993):** Protocolos de correo electrónico cifrados. Si activas estos, el Antivirus del FortiGate podrá escanear los archivos adjuntos de los correos que envían o reciben tus usuarios.
 
 
-si queremos el caso de Full SSL Inspection on Inbount Traffic, tenemos que habilittar el ***protecting SSL Server***
+si queremos el caso de Full SSL Inspection on Inbount Traffic, tenemos que habilittar el ***full SSL Inspection***
 
+{para los otros modos ni idea :/ }
