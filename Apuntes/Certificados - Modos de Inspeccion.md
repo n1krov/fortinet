@@ -101,7 +101,8 @@ Cuando un usuario externo (Alice) intenta conectarse a tu servidor protegido:
 - **Suplantación Legítima:** El FortiGate presenta el certificado firmado al usuario en nombre del servidor. Como el FortiGate posee la clave, puede descifrar el tráfico, inspeccionarlo y volverlo a cifrar antes de enviarlo al servidor interno.
     
 
-### **Configuración en la GUI (Security Profiles > SSL/SSH Inspection)**
+---
+## Configuración en la GUI (Security Profiles > SSL/SSH Inspection)
 
 - **Enable SSL inspection of:** Se debe seleccionar la opción **Protecting SSL Server**.
     
@@ -126,9 +127,9 @@ hay perfiles por defecto, pero puedes crear uno y tienes la configuracion import
 
 ![[Captura de pantalla_20260205_111901.png]]
 
-> nota qeu enable ssl inspection of > multiple clients connections to multiple servers es justo para *proteger a los usuarios de nuestra red* este no puede ver el payload
+> nota qeu enable ssl inspection of > multiple clients connections to multiple servers es justo para ***proteger a los usuarios de nuestra red*** este no puede ver el payload
 
-si queremos el caso de Full SSL Inspection on Inbount Traffic, tenemos que habilittar el ***protecting SSL Server***
+
 
 **1. SSL Inspection Options (El "Qué" proteger)**
 
@@ -151,3 +152,7 @@ Esta sección le dice al FortiGate en qué puertos debe intentar descifrar tráf
 
 - **HTTPS (443):** Navegación web segura.
 - **SMTPS (465), POP3S (995), IMAPS (993):** Protocolos de correo electrónico cifrados. Si activas estos, el Antivirus del FortiGate podrá escanear los archivos adjuntos de los correos que envían o reciben tus usuarios.
+
+
+si queremos el caso de Full SSL Inspection on Inbount Traffic, tenemos que habilittar el ***protecting SSL Server***
+
