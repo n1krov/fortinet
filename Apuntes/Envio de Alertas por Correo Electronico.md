@@ -97,3 +97,23 @@ En tu captura, casi todos los sensores están en `disable`. Para que te lleguen 
 
 - **`FDS-license-expiring-warning`**: Si lo habilitás, el equipo te enviará un recordatorio antes de que venzan tus servicios de FortiGuard.
 - **`FDS-license-expiring-days: 15`**: Es el tiempo de antelación. Te avisará 15 días antes del vencimiento.
+
+
+---
+
+luego **Programando las alertas**
+
+`config alertmail set`
+
+`set email-interval` cada cuanto mandar correo
+`set username correo`
+
+`set mailto1 correo`
+
+luego haces enable a los eventos que uno quiere ir informando
+`set evento enable`
+`end`
+
+si quieres testear las conexiones
+`diagnose log alertmail test`
+
