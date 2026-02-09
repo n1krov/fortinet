@@ -34,3 +34,8 @@ es un perfil de seguridad que permite que los usuarios no puedan descargar ciert
 
 ir a `security profiles > file filter > create new`
 
+esta politica funciona en ambos [[Modos de Inspeccion - FLOW-Based Y PROXY-Based]]
+
+
+![[Pasted image 20260209090441.png]]
+
