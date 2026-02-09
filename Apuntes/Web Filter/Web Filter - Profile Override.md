@@ -60,4 +60,12 @@ graph TD
 - **Licencia**: Tiene un **periodo de gracia de dos días** si se vence el contrato.
     
 - **Overrides**: Son ideales para no tener que crear 50 políticas distintas; usás una general y das permisos de override a quienes lo necesiten.
-    
+
+
+
+---
+
+
+tambien tienes un registro de quien esta en modo override si miras en `security profiles > web profile override`
+
+
