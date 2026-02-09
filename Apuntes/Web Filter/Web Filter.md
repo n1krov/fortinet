@@ -60,3 +60,5 @@ en al sopciones de cada categoria si seleccionas authenticate vas a pode asignar
 
 
 luego a la hora de aplicar el perfil. esto se configura en una politica como en otras configuraciones de `securtiy profile`
+cabe aclarar que el web filter funciona por lejos mucho mejor con el ssl inspection en modo > `deep-inspection`
+
