@@ -49,3 +49,14 @@ Para que ese paso funcione, el equipo utiliza la base de datos en la nube:
 
 ---
 este es un servicio pago, requiere un contrato con fortinet
+
+web filter puede funcionar en ambos [[Modos de Inspeccion - FLOW-Based Y PROXY-Based]]
+
+de las opciones mas importantes son el filtrado por categoria
+![[Captura de pantalla_20260209_110138.png]]
+> tambien se pueden crear categorias
+
+en al sopciones de cada categoria si seleccionas authenticate vas a pode asignar a grupos de usuario
+
+
+luego a la hora de aplicar el perfil. esto se configura en una politica como en otras configuraciones de `securtiy profile`
