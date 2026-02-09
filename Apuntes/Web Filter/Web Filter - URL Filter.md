@@ -10,6 +10,9 @@ antes presentar como trabaja el url filter
 ![[Captura de pantalla_20260209_114952.png]]
 
 cuando viene una URL antes de mostrar la pagina pasa por 3 importantes filtros. el primero es por el `static URL filter`, si esta en allowed/monitor pasa a ver los `filtros de categorias de fortiguard` y luego si esta permitido procede a los `filtros avanzados`.
+
+si en static URL filter tiene la ipcion de exempt va a ir directamente a cargar el sitio y se salta los siguientes filtros
+
 ## **Static URL Filter: Control Manual y Granular**
 
 Esta capa de seguridad permite definir reglas "en blanco y negro" para dominios o URLs exactas, independientemente de la categoría a la que pertenezcan.
