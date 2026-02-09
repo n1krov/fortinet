@@ -44,3 +44,69 @@ Transformar el texto o tema que te indique en un **manual técnico de cibersegur
 
 ir a `policy&objects > IPv4DoS policy > create new`
 
+
+## **Configuración de IPv4 DoS Policy**
+
+A diferencia de un sensor IPS estándar, la política DoS está diseñada para frenar ataques masivos de inundación basándose en **umbrales (thresholds)** de tráfico.
+
+### **1. Criterios de Aplicación (Matching)**
+
+En la parte superior de la política (segunda imagen), defines dónde se aplicará la protección:
+
+- **Incoming Interface:** Es vital seleccionar la interfaz por donde ingresa el tráfico sospechoso (ej. `ISP 1 (port2)`).
+    
+- **Source / Destination Address:** Generalmente se configura como `all` para proteger todo el tráfico entrante, o se especifica si se quiere proteger un servidor VIP concreto.
+    
+- **Service:** El protocolo a monitorear (usualmente `ALL`).
+
+### **2. Clasificación de Anomalías (L3 y L4)**
+
+El FortiGate divide la inspección en dos capas del modelo OSI:
+
+#### **Anomalías de Capa 3 (L3 Anomalies)**
+
+Se centran en el protocolo IP y el volumen de sesiones:
+
+- **ip_src_session / ip_dst_session:** Limita cuántas sesiones concurrentes puede tener una sola IP de origen o dirigirse a una sola IP de destino. El umbral mostrado es de **5000** sesiones.
+    
+
+#### **Anomalías de Capa 4 (L4 Anomalies)**
+
+Detectan ataques de inundación (flooding) y escaneos de puertos:
+
+- **tcp_syn_flood:** Protege contra el agotamiento de recursos por intentos de conexión TCP incompletos. Umbral configurado: **200**.
+    
+- **udp_flood / icmp_flood:** Detecta ráfagas inusuales de tráfico UDP o ICMP que intentan saturar el ancho de banda. Umbrales: **100** y **50** respectivamente.
+    
+- **tcp_port_scan / udp_scan:** Identifica si alguien está barriendo puertos para encontrar vulnerabilidades. Umbral bajo (**10**) para una detección rápida.
+    
+
+---
+
+### **3. Acciones y Umbrales (Thresholds)**
+
+Para cada anomalía, debes configurar tres parámetros clave:
+
+- **Logging:** Si está en `On`, generará un registro en **Log & Report > Anomaly** cuando se supere el umbral.
+    
+- **Action:**
+    
+    - **Block:** Corta el tráfico que exceda el límite definido.
+        
+    - **Monitor:** Solo registra el evento sin bloquear, ideal para "tunear" los umbrales antes de entrar en producción.
+        
+- **Threshold:** Es el valor numérico de ráfaga (paquetes por segundo o sesiones) que dispara la acción.
+    
+
+|**Anomalía**|**Descripción**|**Umbral Inicial (Monitor)**|**Umbral Producción (Block)**|**Acción Sugerida**|
+|---|---|---|---|---|
+|**tcp_syn_flood**|Inundación de intentos de conexión TCP.|2000|**400 - 800**|Block|
+|**udp_flood**|Ráfagas masivas de paquetes UDP.|1000|**500 - 1000**|Block|
+|**icmp_flood**|Ataque de "Ping" masivo.|250|**100 - 250**|Block|
+|**tcp_port_scan**|Escaneo de puertos TCP abiertos.|100|**30 - 50**|Block|
+|**udp_scan**|Intento de descubrir servicios UDP.|100|**30 - 50**|Block|
+|**ip_src_session**|Máximo de sesiones desde una sola IP.|5000|**1000 - 2000**|Block|
+|**ip_dst_session**|Máximo de sesiones hacia un solo destino.|5000|**2000 - 5000**|Block|
+
+
+en Log & `report > anomalies` pueden ver las anomalias
