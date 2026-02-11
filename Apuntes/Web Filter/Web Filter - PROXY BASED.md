@@ -15,6 +15,24 @@ todo lo que vimos antes es para operar el perfil de web filter en modo flow base
 
 pero ahora veremos que hay en modo proxy based
 
-Ca
+
+
+#### Category Usage Quota
+
+security profiles > web filter
 
 ![[Pasted image 20260211094037.png]]
+
+cuando trabajamos con cuotas hay que trabajar tambien con [[Application Control]]
+ya que tambien cae por aca el trafico
+
+basta con que este en monitor
+
+si quieres tener un monitor a la vista y agregarlo debes ir a dashboard > fortiguard quota
+
+
+#### Search engines
+
+![[Captura de pantalla_20260211_094857.png]]
+
+esta el safe  search para que no muestren en el navegador contenido inapropiado. muy util en
