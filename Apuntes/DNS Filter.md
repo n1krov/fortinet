@@ -32,3 +32,8 @@ Es el corazón del filtro. Permite bloquear o monitorear el acceso a sitios bas�
 
 Funciona como una "lista negra" o "lista blanca" manual.
 - **Domain Filter:** Aquí puedes escribir dominios específicos (ej: `facebook.com`) para bloquearlos o permitirlos sin importar a qué categoría de FortiGuard pertenezcan.
+
+
+
+---
+la aplicacion tambien se hace de la misma forma, en una politica definida. ya q
