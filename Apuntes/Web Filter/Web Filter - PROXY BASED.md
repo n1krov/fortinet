@@ -35,4 +35,14 @@ si quieres tener un monitor a la vista y agregarlo debes ir a dashboard > fortig
 
 ![[Captura de pantalla_20260211_094857.png]]
 
-esta el safe  search para que no muestren en el navegador contenido inapropiado. muy util en
+esta el safe  search para que no muestren en el navegador contenido inapropiado. muy util en instituciones
+
+la restriccion de acceso a youtube a contenidos que son restrictivos o yt considera medio inapropiados
+
+#### Proxy options
+
+![[Captura de pantalla_20260211_095543.png]]
+
+aca esta la opcion de restringir las cuentas de google a dominios especificos
+ej: si pusiste el dominio empresa.com no te va a dejar loguearte si  no tenes upesto en tu correo `usuario@empresa.com`
+
