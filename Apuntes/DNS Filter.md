@@ -33,7 +33,31 @@ Es el corazón del filtro. Permite bloquear o monitorear el acceso a sitios bas�
 Funciona como una "lista negra" o "lista blanca" manual.
 - **Domain Filter:** Aquí puedes escribir dominios específicos (ej: `facebook.com`) para bloquearlos o permitirlos sin importar a qué categoría de FortiGuard pertenezcan.
 
+![[Captura de pantalla_20260211_114744.png]]
+### Filtro de Dominios Específicos
+
+Has agregado manualmente dos entradas para bloquear el acceso a una plataforma educativa:
+
+- **Dominios:** `udemy.com` y `www.udemy.com`.
+    
+- **Type (Simple):** Significa que el FortiGate busca la coincidencia exacta de ese texto.
+    
+- **Action (Redirect to Block Portal):** En lugar de resolver la IP real, el FortiGate enviará al usuario a una página de bloqueo.
+    
+- **Status (Enable):** Ambos filtros están activos ahora mismo.
+    
+
+### Opciones de Redirección y Errores
+
+En la parte inferior ves configuraciones que definen qué pasa cuando algo falla:
+
+- **Redirect Portal IP:** Está usando la IP por defecto de FortiGuard (`208.91.112.55`). Esta es la dirección a la que se envía el tráfico cuando un sitio es bloqueado por el filtro DNS.
+    
+- **Allow DNS requests when a rating error occurs:** Está **desactivado**. Esto significa que, si por alguna razón el servicio de clasificación de FortiGuard no responde, el FortiGate **bloqueará** la consulta DNS por seguridad en lugar de permitirla.
 
 
 ---
-la aplicacion tambien se hace de la misma forma, en una politica definida. ya q
+la aplicacion tambien se hace de la misma forma, en una politica definida. ya que esto es un perfil de seguridad
+
+esto, al igual que [[Web Filter]], debe usar los servidores de fortiGuard.
+
