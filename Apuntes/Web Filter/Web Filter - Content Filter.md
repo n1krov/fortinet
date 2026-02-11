@@ -24,4 +24,5 @@ en Security Profiles > web fileter > static URL filter esta la opcion
 es colocar un patron y aquellas que coinciden se podran exemptuar o blquear
 
 puwede ser un windlcard o regex,
-es necesario que el modo de inspeccion debe estar en deep inspection ya que fortigate tiene que entrar y ver 
+es necesario que el modo de inspeccion debe estar en deep inspection ya que fortigate tiene que entrar y ver el contenido
+
