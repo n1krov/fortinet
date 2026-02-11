@@ -26,3 +26,19 @@ es colocar un patron y aquellas que coinciden se podran exemptuar o blquear
 puwede ser un windlcard o regex,
 es necesario que el modo de inspeccion debe estar en deep inspection ya que fortigate tiene que entrar y ver el contenido
 
+
+### Opciones de Clasificación (Rating Options)
+
+![[Captura de pantalla_20260211_093526.png]]
+
+- **Allow websites when a rating error occurs:**
+    
+    - **¿Qué hace?:** Si el FortiGate intenta consultar a los servidores de FortiGuard para saber si una página es "Juegos" o "Noticias" y la consulta falla (por ejemplo, por un microcorte de internet), esta opción permite que el usuario entre a la página de todos modos.
+        
+    - **Recomendación:** Se suele activar para no interrumpir la navegación por problemas externos, pero si tu prioridad es la seguridad máxima, desactivarlo bloqueará cualquier sitio que no pueda ser verificado.
+        
+- **Rate URLs by domain and IP Address:**
+    
+    - **¿Qué hace?:** Cuando está activo, el FortiGate no solo revisa el nombre del dominio (ej: `google.com`), sino también la dirección IP del servidor donde está alojado.
+        
+    - **Utilidad:** Ayuda a bloquear sitios maliciosos que usan IPs conocidas por actividades sospechosas, incluso si cambian de nombre de dominio constantemente.
