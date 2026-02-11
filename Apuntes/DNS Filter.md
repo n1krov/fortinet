@@ -56,6 +56,20 @@ En la parte inferior ves configuraciones que definen qué pasa cuando algo falla
 - **Allow DNS requests when a rating error occurs:** Está **desactivado**. Esto significa que, si por alguna razón el servicio de clasificación de FortiGuard no responde, el FortiGate **bloqueará** la consulta DNS por seguridad en lugar de permitirla.
 
 
+
+DNS translation es cuando matchee ese dominio con su IP destino la reemplazas por otra ip.
+
+![[Captura de pantalla_20260211_115306.png]]
+
+
+por ultimo las options
+
+![[Pasted image 20260211115728.png]]
+
+
+cuando no pueda hacer la conexional fortiguard puedes bloquearlo o dejar pasar el trafico
+y habilitar la opcion de log
+
 ---
 la aplicacion tambien se hace de la misma forma, en una politica definida. ya que esto es un perfil de seguridad
 
