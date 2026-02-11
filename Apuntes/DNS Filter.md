@@ -11,3 +11,8 @@ Aqui va el texto:
 
 ---
 
+en `security profiles > dns filter`
+
+![[Captura de pantalla_20260211_111703.png]]
+es muy similar a loq ue nos encontramos en [[Web Filter]]
+
