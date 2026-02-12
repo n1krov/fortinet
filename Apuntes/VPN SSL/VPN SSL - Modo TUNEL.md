@@ -124,3 +124,12 @@ Ahora en el `VPN > SSL-VPN Settings`
 nota que ahi se puede configurar el rango de ips que se le asignaran a los equipos, puede ser automatico o uno especifico. si es especifico puedes agregar uno o mas grupos de IP
 tambien servidores DNS
 
+
+
+Por ultimo debes crear una policy dedicada para el tunel vpn SSL
+
+![[Captura de pantalla_20260212_115400.png]]
+
+>[!warning]
+>esto sucede poruqe en la configuracion de modo tunel se coloco el modo split tunel Based on policy destination, que divide el trafico segun lo que se quiere navegar, por eso el fortigate te pide un rango de IP destino porque quiere saber cual sera el destino de loq eu se va a hacer el tunel. lo demas se ira por salida a internet
+
