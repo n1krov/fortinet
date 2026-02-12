@@ -29,3 +29,13 @@ Cuando te pase un texto de un concepto, transformalo en una **nota wiki estructu
 
 ---
 
+este es un manual de como conectarse a la vpn para tener acceso mediante el forti client vpn.
+En la ventana le das a Configure VPN
+
+![[Captura de pantalla_20260212_120132.png]]
+
+luego pones las credenciales del usuario.
+
+luego de eso estarias conectado a la vpn
+
+![[Captura de pantalla_20260212_120351.png]]

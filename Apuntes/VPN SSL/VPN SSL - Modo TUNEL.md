@@ -98,6 +98,10 @@ Esta es la decisión más importante. Define si **todo** lo que haga el usuario 
 
 Aquí seleccionas el "estanque" de direcciones IP que el FortiGate le prestará a los usuarios remotos. Sin una IP de este rango, el usuario no puede navegar dentro de tu red.
 
+
+#### Routing access override 
+
+
 ### 3. Tunnel Mode Client Options
 
 Son funciones de conveniencia para el usuario final en su FortiClient:
@@ -132,4 +136,11 @@ Por ultimo debes crear una policy dedicada para el tunel vpn SSL
 
 >[!warning]
 >esto sucede poruqe en la configuracion de modo tunel se coloco el modo split tunel Based on policy destination, que divide el trafico segun lo que se quiere navegar, por eso el fortigate te pide un rango de IP destino porque quiere saber cual sera el destino de loq eu se va a hacer el tunel. lo demas se ira por salida a internet
+
+quedaria por conectarse por el forti client la vpn del lado del cliente. puedes ver como en [[FortiClientVPN - Conectarse por VPN]]
+
+en Dashboard > users & devices > firewall users
+
+![[Captura de pantalla_20260212_120529.png]]
+
 
