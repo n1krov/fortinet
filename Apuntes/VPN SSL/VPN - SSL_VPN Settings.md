@@ -50,3 +50,6 @@ Esta es la parte más importante para la organización:
 justo aqui es donde se implementa la regla de quienes tienen que acceder al [[VPN - SSL_VPN Portals]]
 
 y por ultimo se debe implementar esto en una policy
+
+![[Captura de pantalla_20260212_100054.png]]![[Captura de pantalla_20260212_100216.png]]
+
