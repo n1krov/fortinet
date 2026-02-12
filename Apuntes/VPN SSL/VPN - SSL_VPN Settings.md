@@ -53,3 +53,8 @@ y por ultimo se debe implementar esto en una policy
 
 ![[Captura de pantalla_20260212_100054.png]]![[Captura de pantalla_20260212_100216.png]]
 
+asi se ve el portal luego qeu accedes a el
+![[Captura de pantalla_20260212_101034.png]]
+
+
+![[Captura de pantalla_20260212_101326.png]]
