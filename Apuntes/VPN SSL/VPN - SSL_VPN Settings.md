@@ -44,4 +44,9 @@ Estas opciones se aplican solo si usas el **Tunnel Mode** (con FortiClient):
 Esta es la parte más importante para la organización:
 
 - Aquí es donde vinculas **Quién** con **Qué**. Por ejemplo: puedes crear una regla para que el grupo de Active Directory "Contadores" sea dirigido al portal "Web Portal" que configuramos antes, mientras que el grupo "IT_Admins" sea dirigido a un portal con "Full Access".
-    
+
+
+![[Captura de pantalla_20260212_095431.png]]
+justo aqui es donde se implementa la regla de quienes tienen que acceder al [[VPN - SSL_VPN Portals]]
+
+y por ultimo se debe implementar esto en una policy
