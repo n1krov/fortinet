@@ -18,6 +18,9 @@ en `VPN > ssl-vpn Portals > create new`
 
 Esta captura de pantalla muestra la creación de un nuevo **SSL-VPN Portal** en la interfaz de FortiOS, configurado específicamente para el **Web Mode** (Modo Web). Este modo es ideal para usuarios que necesitan acceso rápido a recursos internos sin instalar software adicional, ya que funciona enteramente a través de un navegador web.
 
+hay un limitador tambien Limit Users to One SSL-VPN connections at a time 
+> ese es para que el usuario tenga permitido una sola conexion vpn
+
 ### 1. Modos de Conexión
 
 - **Tunnel Mode (Desactivado):** En esta configuración, no se permite el uso de FortiClient para crear un adaptador virtual en la PC del usuario.
