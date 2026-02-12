@@ -99,9 +99,6 @@ Esta es la decisión más importante. Define si **todo** lo que haga el usuario 
 Aquí seleccionas el "estanque" de direcciones IP que el FortiGate le prestará a los usuarios remotos. Sin una IP de este rango, el usuario no puede navegar dentro de tu red.
 
 
-#### Routing access override 
-
-
 ### 3. Tunnel Mode Client Options
 
 Son funciones de conveniencia para el usuario final en su FortiClient:
