@@ -105,3 +105,5 @@ Si vas a autenticar usuarios mediante su sesión de Windows (Active Directory), 
 3. **Puertos Abiertos:** **TCP 139 y 445** deben estar abiertos entre el agente/FortiGate y los hosts.
     
 
+
+adicionalmente puedes habilitar mas funciones en  System > feature visibility > ssl-vpn personal bookmarks | ssl-vpn realms

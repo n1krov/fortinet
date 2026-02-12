@@ -58,3 +58,4 @@ asi se ve el portal luego qeu accedes a el
 
 
 ![[Captura de pantalla_20260212_101326.png]]
+
