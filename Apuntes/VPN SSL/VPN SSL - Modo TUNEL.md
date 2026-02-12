@@ -78,3 +78,40 @@ end
 configuracion modo tunel
 
 ![[Captura de pantalla_20260212_112838.png]]
+
+Esta parte de la configuración es el "cerebro" del **Modo Túnel**. Aquí decides cómo se comportará la computadora del usuario una vez que se conecte mediante el **FortiClient**.
+
+A continuación, te explico las opciones más importantes de la imagen para que las entiendas a la perfección:
+
+### 1. Split Tunneling (El tráfico dividido)
+
+Esta es la decisión más importante. Define si **todo** lo que haga el usuario en internet pasa por tu oficina, o solo lo necesario:
+
+- **Disabled (Desactivado):** Todo el tráfico del usuario (Facebook, YouTube, correos internos) entra al túnel. Es más seguro porque tú controlas todo, pero consume mucho ancho de banda de tu internet.
+    
+- **Enabled Based on Policy Destination:** Solo el tráfico que va hacia los servidores que tú definiste en las políticas del firewall viajará por la VPN. El resto (como ver Netflix) sale por el internet de la casa del usuario.
+    
+- **Enabled for Trusted Destinations:** Es similar al anterior, pero tú marcas específicamente qué destinos son seguros para que no pasen por el túnel.
+    
+
+### 2. Source IP Pools
+
+Aquí seleccionas el "estanque" de direcciones IP que el FortiGate le prestará a los usuarios remotos. Sin una IP de este rango, el usuario no puede navegar dentro de tu red.
+
+### 3. Tunnel Mode Client Options
+
+Son funciones de conveniencia para el usuario final en su FortiClient:
+
+- **Allow client to save password:** Permite que el usuario guarde su contraseña para no escribirla cada vez. (Menos seguro, pero más cómodo).
+    
+- **Allow client to connect automatically:** En cuanto el FortiClient detecte internet, intentará levantar la VPN solo.
+    
+- **Allow client to keep connections alive:** Evita que la VPN se corte si el usuario deja de usar la PC por unos minutos.
+    
+- **DNS Split Tunneling:** Permite que las consultas de nombres internos (como `servidor.local`) vayan a tu oficina, pero las consultas públicas (como `google.com`) las resuelva el internet del usuario.
+    
+
+
+> [!TIP] **Recuerda:**
+> 
+> El modo túnel requiere **obligatoriamente** instalar el FortiClient. Si no puedes instalar software en la PC, tendrías que usar el **Web Mode** (navegador únicamente).
