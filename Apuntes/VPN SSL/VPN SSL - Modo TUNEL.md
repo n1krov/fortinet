@@ -115,3 +115,12 @@ Son funciones de conveniencia para el usuario final en su FortiClient:
 > [!TIP] **Recuerda:**
 > 
 > El modo túnel requiere **obligatoriamente** instalar el FortiClient. Si no puedes instalar software en la PC, tendrías que usar el **Web Mode** (navegador únicamente).
+
+
+Ahora en el `VPN > SSL-VPN Settings`
+
+![[Captura de pantalla_20260212_114439.png]]
+
+nota que ahi se puede configurar el rango de ips que se le asignaran a los equipos, puede ser automatico o uno especifico. si es especifico puedes agregar uno o mas grupos de IP
+tambien servidores DNS
+
