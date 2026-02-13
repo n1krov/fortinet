@@ -34,7 +34,7 @@ al momento de conectarte por medio del forti client. para este ejemplo se requie
 
 ![[Captura de pantalla_20260213_102020.png]]
 
-host check creo que funciona siempre y cuando sea version 6 forticlient
+host check creo que funciona siempre y cuando sea version 6 forticlient a menos qeu trabajen con el forticlient pago
 
 #### Restrict to Specific OS Versions
 
@@ -50,9 +50,18 @@ pero no hay un control grafico para eso, eso se hace por [[CLI]]
 
 `conifg vpn ssl web portal`
 aqui editar el  (portal habilitado para el forticlient)
+	show
+	
+	`edit (algun portal)`
+		get
+		 set mac-addr-check enable
+		 conifg mac-addr-check-rule
+			 edit 1
+			 set mac-addr-list ma:ca:dd:re:ss:00
+		end
+	end
 
-`edit (algun portal)`
-get
+
 
 
 
