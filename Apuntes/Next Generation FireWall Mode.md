@@ -11,6 +11,10 @@ Aqui va el texto:
 
 ---
 
-en system > settings se puede habilitar la opcion de ng
+en system > settings se puede habilitar la opcion de ngfw
+
+tiene dos modos el profile-based y policy based, ese te obliga a usar nat
+
+no tiene mas modo proxy y las politicas se editan y configuran en 3 secciones
 
 ![[Captura de pantalla_20260213_115042.png]]
