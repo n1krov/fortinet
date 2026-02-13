@@ -32,6 +32,8 @@ creamos un usuario pki, esto se hace por CLI
 		set ca CA_CERT
 	end
 
+> copiar el subject del certificado correspondiente y pegarlo en la ventana de pki como aparece en la siguiente imagen...
+
 ahi aparecera la opcion de pki en SYSTEM
 
 ![[Captura de pantalla_20260213_111406.png]]
@@ -82,4 +84,30 @@ aqui hay que crear una **interfaz ssl** en `network > interfaces > create new in
 
 nota que el type es el ssl vpn tunnel
 la interface es la wan1 que sale a internet
+
+configuramos el usuario pki por cli
+`config user peer`
+	edit (nombre usuario pki, por conveniencia poner nombre igual al certificado)
+		get
+		set ca CA_CERT
+	end
+
+> copiar el subject del certificado correspondiente y pegarlo en la ventana de pki
+
+aqui en la seccion `vpn > ssl-vpn clients` creamos el cliente
+
+![[Captura de pantalla_20260213_113753.png]]
+nota que
+la interface es la vpn
+la ip es la ip del servidor hacia donde nos vamos a conectar
+el puerto definido en el forti del servidor
+el nombre de usuario (usuario vpn)
+el certificado y el usuario pki programado previamente
+
+
+por ultimo la firewall policy
+
+![[Captura de pantalla_20260213_113954.png]]
+
+nota que el incoming es la red internay el outgoing es el tunel
 
