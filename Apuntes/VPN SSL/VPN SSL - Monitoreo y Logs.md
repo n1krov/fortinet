@@ -47,6 +47,29 @@ tambien en `VPN > ssl-Vpn settings` podemos ver los timers
 
 para acceso a otros timers se hace por [[CLI]]
 
+Timers Principales de Sesión y Autenticación
+
+- **`idle-timeout : 3000`** Determina el tiempo (en segundos) que una sesión de administración (como tu acceso actual por CLI o GUI) puede estar inactiva antes de que el FortiGate te desconecte automáticamente por seguridad. En este caso, son **50 minutos**.
+    
+- **`auth-timeout : 28800`** Es el tiempo máximo de validez para una autenticación de usuario. Una vez transcurrido este tiempo (8 horas), el usuario deberá volver a ingresar sus credenciales, sin importar si ha estado activo o no. Este valor es crítico en entornos con **SSL VPN** o **FSSO**.
+    
+
+---
+
+### 🛡️ Seguridad y Control de Login
+
+- **`login-block-time : 60`** Si alguien intenta adivinar una contraseña y falla repetidamente, el FortiGate bloqueará nuevos intentos desde esa IP durante este periodo (60 segundos). Ayuda a mitigar ataques de fuerza bruta.
+    
+- **`login-timeout : 30`** Es el tiempo máximo que el sistema espera a que un usuario complete el ingreso de sus credenciales (usuario/password) desde que se abre la pantalla de inicio de sesión. Si tardas más de 30 segundos, la conexión se cierra.
+
+ Protocolos y Tráfico Web (HTTP/DTLS)
+
+- **`dtls-hello-timeout : 10`** Específico para **SSL VPN** cuando utiliza el protocolo **DTLS** (UDP) para mejorar el rendimiento de aplicaciones como voz o video. Es el tiempo de espera para el saludo inicial del protocolo.
+    
+- **`http-request-header-timeout : 20`** / **`http-request-body-timeout : 30`** Controlan cuánto tiempo espera el FortiGate para recibir los encabezados o el cuerpo de una solicitud HTTP antes de cerrar la conexión por inactividad. Previenen que conexiones lentas o incompletas saturen los recursos del equipo.
+
+como configurarlo 
+
 conifg vpn ssl settings
 	get | grep time
-	
+	set auth-timeout (int)
