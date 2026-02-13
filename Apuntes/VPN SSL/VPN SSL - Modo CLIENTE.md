@@ -36,3 +36,24 @@ al momento de conectarte por medio del forti client. para este ejemplo se requie
 
 host check creo que funciona siempre y cuando sea version 6 forticlient
 
+#### Restrict to Specific OS Versions
+
+esto es para ver que macs o windows se pueden deshabilitar
+
+![[Captura de pantalla_20260213_102831.png]]
+
+
+
+# ¿Se puede limitar ciertas conexiones segun la MAC address?
+chi
+pero no hay un control grafico para eso, eso se hace por [[CLI]]
+
+`conifg vpn ssl web portal`
+aqui editar el  (portal habilitado para el forticlient)
+
+`edit (algun portal)`
+get
+
+
+
+
