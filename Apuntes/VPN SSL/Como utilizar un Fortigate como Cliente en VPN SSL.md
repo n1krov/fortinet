@@ -59,4 +59,27 @@ hay que configurar mas opciones que no estan en la GUI para que el usuario que v
 	end
 end
 
-queda la policy que va a permitir el trafico a los usuarios que estan detras del fortigate qeu ace de cliente
+queda la policy que va a permitir el trafico a los equipos que estan detras del fortigate qeu ace de cliente
+
+![[Captura de pantalla_20260213_112343.png]]
+- se deja el NAT
+- en el incoming esta el tunel
+- outgoing ocupa el puerto 1 de lan que lleva a los recursos remotos
+- como source toma el usuario vpn
+- el destino como se trata de un split tunneling hay que especificar la subred para enrutar el trafico 
+
+![[Captura de pantalla_20260213_112528.png]]
+
+---
+
+## Lado cliente
+
+se importa los certificados de la misma forma que el anterior
+
+aqui hay que crear una **interfaz ssl** en `network > interfaces > create new interface`
+
+![[Captura de pantalla_20260213_112801.png]]
+
+nota que el type es el ssl vpn tunnel
+la interface es la wan1 que sale a internet
+
