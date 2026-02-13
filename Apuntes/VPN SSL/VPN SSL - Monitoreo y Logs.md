@@ -29,3 +29,24 @@ Aqui te va el texto:
 
 ---
 
+en dashboard > network > SSL-VPN
+
+![[Captura de pantalla_20260213_104655.png]]
+eso esta interesante ya que se puede ver a detalle los usuarios que teineen acceso cuandtas conexiones tiene establecidas y su actividad
+
+tambien en `Log &report > events > user events` se puede ver aqui tambine los eventos de autenticacin de usuarios
+
+tambien en `Log &report > events > VPN events` etsan los logs de los tuneles vpns
+
+tambien en `VPN > ssl-Vpn settings` podemos ver los timers
+
+![[Captura de pantalla_20260213_105102.png]]
+
+> en la imagen se puede ver uqe se puede desloguear automaticamente luego de que pasen los 3000 segundos de idle
+
+
+para acceso a otros timers se hace por [[CLI]]
+
+conifg vpn ssl settings
+	get | grep time
+	
