@@ -43,7 +43,17 @@ El Split Tunneling determina qué tráfico del usuario viaja por el túnel cifra
 ### 1. Disabled (Túnel Completo)
 
 - **Comportamiento:** Todo el tráfico del cliente, sin excepción, se dirige a través del túnel SSL VPN.
-    
+
+vas a tener que crear politica tanto para la red interna, como para la salida a internet
+
+la politica para salida a internet debe ser algo como esto
+
+![[Captura de pantalla_20260213_095538.png]]
+
+ahi estan las politicas de vpn ssl client, nota los destinos. tiene a dos subredes.
+
+![[Captura de pantalla_20260213_095623.png]]
+
 - **Uso:** Máxima seguridad. El FortiGate inspecciona hasta lo que el usuario busca en Google o ve en YouTube.
     
 - **Desventaja:** Consume mucho ancho de banda y CPU del firewall innecesariamente.
