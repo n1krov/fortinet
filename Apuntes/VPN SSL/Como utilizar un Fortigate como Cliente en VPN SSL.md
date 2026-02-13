@@ -111,3 +111,67 @@ por ultimo la firewall policy
 
 nota que el incoming es la red internay el outgoing es el tunel
 
+
+
+---
+# TEORIA FortiGate como Cliente SSL VPN (Modo Túnel)
+
+Esta arquitectura permite que un dispositivo FortiGate actúe como un cliente para conectarse a otro FortiGate que funciona como servidor. Es una alternativa robusta a IPsec en ciertos escenarios de red.
+
+## 1. ¿Cómo funciona esta arquitectura? ⚙️
+
+A diferencia del túnel tradicional para usuarios (FortiClient), aquí el túnel se establece **entre dos dispositivos de hardware**:
+
+1. **Iniciación:** El FortiGate cliente inicia la conexión hacia el FortiGate servidor usando una interfaz de tipo **SSL VPN Tunnel**.
+    
+2. **Autenticación:** El cliente utiliza una combinación de **PSK (Clave Pre-compartida)** y un **Certificado de Cliente PKI** para validarse ante el servidor.
+    
+3. **Establecimiento del Túnel:** Se crea una interfaz virtual (`ssliclient_port`) en el cliente. El servidor le asigna una dirección IP virtual de un pool reservado y el cliente añade dinámicamente rutas hacia las subredes remotas.
+    
+4. **Acceso:** Los dispositivos detrás del FortiGate cliente pueden acceder a los recursos detrás del servidor a través de este túnel cifrado (SSL/TLS).
+    
+
+## 2. Requisitos de Autenticación y Certificados 🔐
+
+Para que el túnel sea exitoso, la confianza debe ser mutua y explícita:
+
+- **Certificado CA:** El FortiGate servidor requiere un certificado CA válido.
+    
+- **Certificado de Cliente PKI:** El FortiGate cliente debe presentar un certificado PKI para autenticarse.
+    
+- **Cuenta de Usuario Local:** El cliente se autentica en el servidor usando una cuenta de usuario local configurada en el servidor (PSK).
+    
+
+## 3. Ventajas y Desventajas ⚖️
+
+|**Ventajas**|**Desventajas**|
+|---|---|
+|**Traspasa bloqueos:** Evita problemas si el tráfico ESP o los puertos UDP 500/4500 (IPsec) están bloqueados por proveedores intermedios.|**Gestión de certificados:** Requiere la instalación y mantenimiento de certificados CA y PKI en ambos extremos.|
+|**Sin fragmentación:** Útil para evitar problemas de paquetes IKE grandes que se fragmentan y fallan si el peer no soporta fragmentación IKE.|**Específico de Vendor:** Al ser SSL VPN, es una solución propietaria de Fortinet.|
+|**Flexibilidad:** Soporta topologías de tipo Hub-and-Spoke.||
+
+---
+
+## 4. El Esquema de Conexión 🌐
+
+Según el diagrama proporcionado:
+
+- **Lado Cliente (Branch Office/Home):** El tráfico sale por el puerto WAN (ej. Port4) a través del túnel SSL.
+    
+- **SSL VPN Tunnel:** El canal cifrado protege los datos mientras viajan por internet.
+    
+- **Lado Servidor (HQ/Company):** Recibe la conexión en su puerto WAN (ej. Port1) y dirige el tráfico hacia los recursos remotos internos (ej. Port2).
+    
+
+> [!IMPORTANT] **Nota sobre el tráfico**
+> 
+> Cualquier aplicación basada en IP ejecutada en las máquinas de los usuarios detrás del FortiGate cliente puede enviar tráfico a través de este túnel de forma transparente.
+
+---
+
+## 5. Recordatorio de Salud del Sistema 🩺
+
+Al mantener túneles activos entre sitios, vigila el consumo de recursos en ambos FortiGates:
+
+- **88% (Red Threshold):** El equipo entra en modo conservación de memoria; podrías tener problemas para levantar nuevos túneles o realizar cambios de configuración.
+- **95% (Extreme Threshold):** Se descartan sesiones nuevas.
