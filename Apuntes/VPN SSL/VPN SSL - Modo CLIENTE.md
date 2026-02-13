@@ -28,3 +28,11 @@ y nos encontramos con las siguientes opciones:
 
 ![[Captura de pantalla_20260213_101053.png]]
 
+si esto se activa, un sistema linux no va a poder conectarse nunca.
+
+al momento de conectarte por medio del forti client. para este ejemplo se requiere una version antigua de fortiCLient
+
+![[Captura de pantalla_20260213_102020.png]]
+
+host check creo que funciona siempre y cuando sea version 6 forticlient
+
